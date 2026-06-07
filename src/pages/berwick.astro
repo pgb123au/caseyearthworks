@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the typical excavation job in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Berwick splits into three patches. The older central blocks around Old Princes Highway are renovation/extension work — small footing digs, garage slabs, pool excavations on established 800-1200m2 blocks. North Berwick (Berwick Springs, Eden Rise) is newer two-storey estate work — full site cut and fill, driveway sub-base, retaining-wall trenches. South Berwick around Berwick Waters has more drainage-led work because of the lower-lying ground. A typical week sees us on 2-3 Berwick jobs." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Berwick soil clay or sandy?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mixed. Northern and eastern Berwick (Eden Rise, Edrington Park, Berwick Springs) is mostly silty-loam over sandy clay — AS 2870 Class P to M. Standard sub-base depths work fine. Central and southern Berwick (Berwick Waters, around the Princes Highway) sits closer to the reactive clay belt — Class M to M-D, needs deeper sub-base or stabilised sub-grade for driveways and slabs. We hand-test at the site visit if there's no geotech report." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you get a bobcat through the side access of a Berwick house?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most Berwick side gates are 900-1000mm wide. Our Bobcat S70 fits through 920mm. A Kubota KX008 mini-ex fits through 800mm. For tighter access (period homes around Berwick Village with 750mm side gates), we use a Dingo or hand-barrow the spoil — it adds 30-50% to a half-day job but it's doable. We confirm access at the site visit and quote accordingly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do pool excavations in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Berwick pool excavations are a regular job for us, typically $3,500-$6,500 for a standard 8m x 4m rectangular plunge or family pool. Concrete pool shells need a flat, square dig with clean spoil cart-away. Fibreglass shells need a contoured, sand-bedded dig with the surround prepped for paving. We coordinate with the pool builder so the dig happens 3-5 days before the shell arrives." }
+    },
+    {
+      "@type": "Question",
+      "name": "What permits do I need for excavation in Berwick?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If the excavation is tied to an approved City of Casey building permit (new home, extension, pool, garage), no separate planning permit is needed for residential cut/fill under 1m depth. Berwick has scattered Vegetation Protection Overlays in older streets — if a significant tree's TPZ (Tree Protection Zone) is within 6m of the dig, you may need planning approval and we'll use screw-pile or hand-dig techniques to avoid root disturbance. We check the overlay map at quoting." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Berwick rainfall affect excavation timing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Berwick averages 760mm rainfall, mostly May-October. Clay sites need a dry weather window of 5-7 days for any compaction work to take. We watch BOM forecasts and don't book reactive-clay jobs (central/south Berwick) into wet weeks — better to push 2 weeks than redo a saturated sub-base. Drier sites (Eden Rise, Edrington Park) run year-round. Foundation digs and emergency drainage we do whatever the weather — pump and tarp as needed." }
+    }
+  ]
+};
+---
+<Layout
+  title="Excavation & Bobcat Hire Berwick | Site Prep & Footings | (03) 9003 0108"
+  description="Excavation, bobcat hire and civil site-prep in Berwick — site cut and fill, driveway sub-base, footing digs, pool excavation, drainage trenching. Mixed clay/silt soil expertise. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/berwick/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Berwick &middot; Eden Rise &middot; Berwick Springs &middot; Berwick Waters</span>
+      <h1>Excavation &amp; bobcat hire in <span class="accent">Berwick</span>.</h1>
+      <p class="hero-sub">
+        Berwick is the home patch &mdash; I live 4 minutes from Berwick Village and
+        our gear yard is at the eastern edge of town. Two or three Berwick jobs a
+        week, every week. Footings, driveway prep, pool digs, drainage, full site
+        cut and fill on Eden Rise / Edrington new builds.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Berwick</span>
+      <h2>The Berwick earthworks story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Three Berwicks, three different jobs.</h3>
+        <p>
+          <strong>Central Berwick</strong> (Old Princes Highway, around the Village)
+          is mostly renovation work on 800&ndash;1200m&sup2; established blocks
+          &mdash; pool digs, garage slab footings, drainage upgrades, the occasional
+          significant tree to work around. <strong>North Berwick</strong> (Eden Rise,
+          Edrington Park, Berwick Springs) is newer two-storey estate work &mdash;
+          full site cut and fill, retaining-wall trenches, driveway sub-base.
+          <strong>South Berwick</strong> (Berwick Waters, Manuka Drive) sits lower
+          and wetter &mdash; drainage-led work dominates here.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Mixed soil &mdash; we hand-test at the visit.</h3>
+        <p>
+          Berwick soil isn&rsquo;t uniform. The northern and eastern fringes
+          (Eden Rise, Edrington) are mostly Class P/M silty-loam over sandy clay
+          &mdash; forgiving, standard sub-base depths work. Central and southern
+          Berwick (around Berwick Waters and Princes Highway corridor) leans into
+          the reactive-clay belt: Class M to M-D, needs deeper sub-base or lime
+          stabilisation for slabs and driveways. If there&rsquo;s no geotech
+          report on the property, we hand-test at the site visit and quote
+          accordingly &mdash; better to spec a deeper sub-base on day one than
+          re-cut a cracked driveway in 2030.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Side-access pool digs are a Berwick specialty.</h3>
+        <p>
+          Half of Berwick&rsquo;s pool jobs are on established blocks with
+          900&ndash;1000mm side gates &mdash; too tight for a standard skid steer.
+          Our Bobcat S70 fits 920mm; the Kubota KX008 mini-excavator fits 800mm.
+          For period homes around the Village with 750mm gates we run a Dingo or
+          hand-barrow. Adds a half-day to the schedule but means you don&rsquo;t
+          have to drop a fence section.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Berwick jobs.</h3>
+        <ul>
+          <li>Eden Rise / Edrington new-build site cut and fill 250&ndash;350m&sup2; pad ($5K&ndash;$10K)</li>
+          <li>Side-access pool excavation, established central Berwick block ($4K&ndash;$6.5K)</li>
+          <li>Driveway sub-base prep for new concrete driveway, 60&ndash;100m&sup2; ($4.8K&ndash;$8K)</li>
+          <li>Renovation footing dig + slab cut, single-storey extension ($2.5K&ndash;$4K)</li>
+          <li>Stormwater drainage trench from Berwick Waters block to street kerb ($1.8K&ndash;$3.5K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Berwick site visit.</h2>
+        <p>Soil check, access check, slope check. 30 minutes on site, fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

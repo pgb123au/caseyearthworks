@@ -1,0 +1,113 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://caseyearthworks.com.au/about/#founder",
+  "name": "Sharon Drysdale",
+  "givenName": "Sharon",
+  "familyName": "Drysdale",
+  "jobTitle": "Principal & Founder",
+  "worksFor": {
+    "@id": "https://caseyearthworks.com.au/#business"
+  },
+  "description": "Sharon Drysdale is the principal and founder of Casey Earthworks, with 14 years of earthworks experience in the City of Casey."
+};
+---
+<Layout
+  title="About Casey Earthworks — Sharon Drysdale, principal & founder"
+  description="Sharon Drysdale runs Casey Earthworks from the City of Casey — 14 years in earthworks. EPA Victoria registered. Meet the principal who quotes your job and runs the crew."
+  canonical="https://caseyearthworks.com.au/about/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">About Casey Earthworks</span>
+      <h1>Sharon Drysdale &mdash; <span class="accent">14 years</span> in earthworks across the City of Casey.</h1>
+      <p class="hero-sub">
+        The principal who quotes your job, runs the crew, and answers his own phone after hours.
+        EPA Victoria registered.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The principal</span>
+      <h2>How Casey Earthworks actually works.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>Sharon is a the City of Casey local, a earthworks principal of 14 years, and you'll find him at the the City of Casey community-Saturday more often than you'll find him in an office. The crew sponsors a junior sports team, the business is a registered training employer, and we run a working-bee for the local primary school every summer holidays. None of that is on the quote — but it does explain why our crew turns up. the City of Casey hires the City of Casey.</p>
+
+        <h3 style="margin-top:2rem;">The the City of Casey side of it.</h3>
+        <p>
+          the City of Casey is not a market we read about; it's the market we live in. Sharon
+          is on the Pakenham Bowls Club committee &mdash; the kind of detail that doesn't fit on a quote but does explain why the
+          crew is on time, why the price doesn't drift, and why we'd rather pass a job to a mate than
+          do work in a suburb we don't know. Every quote we issue is from someone you can put a face to.
+        </p>
+
+        <h3 style="margin-top:2rem;">Credentials &amp; memberships.</h3>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.5rem;">EPA Victoria registered</li><li style="margin-bottom:0.5rem;">WorkSafe Victoria compliant</li>
+          <li style="margin-bottom:0.5rem;">Public liability + workmanship insurance current; certificates available on request.</li>
+          <li style="margin-bottom:0.5rem;">Written, fixed-price quotes (no "from $X" range pricing).</li>
+          <li style="margin-bottom:0.5rem;">Same-person quoting and supervision &mdash; not a call-centre handoff.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">How we operate</span>
+      <h2>What makes a Casey Earthworks job different.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>One person, start to finish.</h3>
+        <p>
+          Sharon quotes the job and runs the crew that does the job. There is no
+          handover, no junior estimator who lowballs the quote then upcharges on the day, and no
+          third-party project manager who hasn't been on a job site in five years. If you ring at 7pm
+          on a Wednesday, you get the person who's going to be on your property on Monday morning.
+        </p>
+
+        <h3 style="margin-top:1.5rem;">Written, fixed-price quotes.</h3>
+        <p>
+          Every quote we issue is all-inclusive &mdash; site assessment, weather risk, access risk,
+          permit work if relevant. No "from $X" range pricing, no day-of-build surprise variations, no
+          mid-job upsell. If a surprise lands on the dig that we did not allow for, it's our cost, not yours.
+        </p>
+
+        <h3 style="margin-top:1.5rem;">A crew that stays the same.</h3>
+        <p>
+          The the City of Casey crew is the same five people it has been for four years. We don't sub work out
+          to chase-cheap labour-hire crews, we don't put apprentices on a job without a registered
+          tradesperson actively supervising, and we don't run a roster of fly-in workers. Continuity
+          is what makes the work hold up at the 10-year mark.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ink);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Talk to Sharon directly.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Quotes are free, fixed-price and same-person. Phones go to Sharon between
+        7am and 7pm; after hours leave a message and we'll call back the next morning.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

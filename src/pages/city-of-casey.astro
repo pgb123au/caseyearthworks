@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which Casey suburbs have the most earthworks demand right now?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Officer, Pakenham, Clyde, Clyde North and Cranbourne East — the south-east Melbourne new-build pipeline. Casey is one of Australia's fastest-growing LGAs with 1,200+ dwellings approved each year, meaning constant residential site cut and fill, driveway sub-base prep and footing excavation. Established suburbs (Berwick, Narre Warren, Endeavour Hills, Hampton Park) see steadier work in pool digs, drainage, garage slabs and retaining-wall prep." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does soil change across the City of Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Roughly two zones. North-west Casey (Endeavour Hills, Hampton Park, eastern Hallam, parts of Narre Warren North) sits on highly reactive Newer Volcanic clay — Class M to H1 under AS 2870, 30-50mm seasonal swell. South-east Casey (Cranbourne, Cranbourne South, Clyde, Officer) is mostly Class P to M silty-loam over sandy clay — much more forgiving but with deep groundwater issues in parts of Clyde. We confirm classification from the geotech report or do a hand-test at the site visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is City of Casey's role in approving earthworks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For residential earthworks under 1m depth tied to an approved building permit, council generally won't require a separate planning approval. Bulk earthworks over 100m3 of cut/fill, or work in a Vegetation Protection Overlay (parts of north Berwick, Endeavour Hills), Significant Landscape Overlay or Heritage Overlay (parts of central Cranbourne), needs a planning permit lodged with City of Casey before excavation starts. Commercial sites follow AS 3798 with mandatory geotechnical supervision." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you charge a travel fee or float fee across Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Float fees are zero within 30km of Berwick — that covers the whole City of Casey LGA plus Pakenham, Cardinia Shire fringe and the eastern parts of Greater Dandenong. Outside that, we charge float-on / float-off transport at cost. We rarely turn down a Casey job for distance — the LGA is our home patch." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a typical Casey new-build site prep cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Single-storey 250-300m2 house pad on a flat Clyde or Officer block (low cut, low fill, simple driveway): $4,500-$7,500 covering topsoil strip, sub-grade prep, sub-base lay and driveway crossover prep. Two-storey on a sloping Berwick or Narre Warren North block (larger cut, batter, retaining tie-in): $9,000-$15,000. Reactive-clay sites add $1,500-$3,000 for lime stabilisation. We always quote in writing with fixed inclusions." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you Worksafe-compliant for excavation depth?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any trench over 1.5m deep in Victoria needs Worksafe-compliant shoring, benching or battering — we run trench shields and a written excavation safe-work-method statement (SWMS) for every job over that depth. Workers Compensation insurance and $20M public liability are current and certificates are emailed before any deposit is paid." }
+    }
+  ]
+};
+---
+<Layout
+  title="Excavation & Bobcat Hire City of Casey | Full LGA Coverage | (03) 9003 0108"
+  description="Excavation, bobcat hire and civil site-prep across the entire City of Casey — Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills, Officer, Clyde, Pakenham. Owner-operated. AS 3798 compliant."
+  canonical="https://caseyearthworks.com.au/city-of-casey/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">City of Casey &middot; full LGA coverage</span>
+      <h1>Excavation &amp; bobcat hire across the <span class="accent">City of Casey</span>.</h1>
+      <p class="hero-sub">
+        From Endeavour Hills in the north-west to Clyde and Cranbourne South in the
+        south-east. One of Australia&rsquo;s fastest-growing LGAs &mdash; Officer,
+        Clyde, Cranbourne East and Pakenham new-build pipeline keeps our gear within
+        15 minutes of every Casey job.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Full coverage</span>
+      <h2>Suburbs we cover.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Featured suburb pages.</h3>
+        <p>Detailed local guides &mdash; soil type, typical job mix, what we usually quote.</p>
+        <div class="areas-grid" style="margin: 1.5rem 0 2.5rem 0;">
+          <a class="area-pill" href="/berwick/">Berwick</a>
+          <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+          <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+          <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+          <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        </div>
+
+        <h3>Other City of Casey suburbs we work in.</h3>
+        <div class="areas-grid" style="margin: 1.5rem 0 2.5rem 0;">
+          <span class="area-pill area-pill-static">Officer</span>
+          <span class="area-pill area-pill-static">Clyde</span>
+          <span class="area-pill area-pill-static">Clyde North</span>
+          <span class="area-pill area-pill-static">Pakenham</span>
+          <span class="area-pill area-pill-static">Hallam</span>
+          <span class="area-pill area-pill-static">Doveton</span>
+          <span class="area-pill area-pill-static">Lynbrook</span>
+          <span class="area-pill area-pill-static">Lyndhurst</span>
+          <span class="area-pill area-pill-static">Narre Warren North</span>
+          <span class="area-pill area-pill-static">Narre Warren South</span>
+          <span class="area-pill area-pill-static">Cranbourne East</span>
+          <span class="area-pill area-pill-static">Cranbourne South</span>
+          <span class="area-pill area-pill-static">Cranbourne North</span>
+          <span class="area-pill area-pill-static">Cranbourne West</span>
+        </div>
+
+        <h3 style="margin-top: 2rem;">Two soil zones, two engineering conversations.</h3>
+        <p>
+          <strong>North-west clay belt</strong> (Endeavour Hills, Hampton Park,
+          eastern Hallam, Narre Warren North): Newer Volcanic reactive clay.
+          AS 2870 Class M to H1. 30&ndash;50mm seasonal swell. We strip 300mm of
+          topsoil, lime-stabilise the subgrade where strength is low, then build
+          back up in 100mm lifts of compacted crushed rock. Driveways and slabs
+          here need extra sub-base thickness or they crack within 5 years.
+        </p>
+        <p>
+          <strong>South-east growth corridor</strong> (Cranbourne, Clyde, Officer,
+          Pakenham): mostly silty-loam over sandy clay. AS 2870 Class P to M.
+          Much more forgiving sub-base but watch for shallow groundwater in
+          parts of Clyde &mdash; we pump and de-water before any pool dig or
+          deep footing in that area.
+        </p>
+
+        <h3 style="margin-top: 2rem;">When you need a planning permit (not just a building permit).</h3>
+        <ul>
+          <li><strong>No permit:</strong> residential cut/fill under 1m, tied to an approved building permit, outside any overlay.</li>
+          <li><strong>Planning permit required:</strong> bulk earthworks over 100m&sup3; cut/fill, or any work inside a Vegetation Protection Overlay, Significant Landscape Overlay or Heritage Overlay. Typical fee $1,200-$3,000 plus 6-8 week assessment.</li>
+          <li><strong>AS 3798 compliance:</strong> mandatory for all commercial earthworks &mdash; warehouse pads, school car parks, civil subdivisions. Geotech supervisor on site at each lift.</li>
+          <li><strong>Worksafe SWMS:</strong> any trench over 1.5m needs documented shoring or battering. We carry trench shields and run engineered slopes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">All five services</span>
+      <h2>What we do.</h2>
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/site-cut-and-fill/"><h3>Site cut &amp; fill</h3><p>$4K&ndash;$15K. Topsoil strip, batter, engineer-tested compaction.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/driveway-preparation/"><h3>Driveway preparation</h3><p>$80&ndash;$140/m&sup2;. Sub-base prep ready for concrete or asphalt.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/foundation-excavation/"><h3>Foundation excavation</h3><p>From $1,800/day. Strip, pad and pier footings on reactive clay.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/pool-excavation/"><h3>Pool excavation</h3><p>$3K&ndash;$7K. Concrete or fibreglass pool digs with spoil cart-away.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/drainage-trenching/"><h3>Drainage trenching</h3><p>$80&ndash;$150/lin.m. Stormwater, sewer, electrical and gas trenching.</p><span class="svc-link">See &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free site visit anywhere in City of Casey.</h2>
+        <p>Clay belt or growth corridor. Soil check at the visit. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

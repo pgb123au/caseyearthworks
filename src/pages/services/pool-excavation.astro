@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a typical pool excavation cost in Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most residential pool digs across Berwick, Cranbourne and Narre Warren land between $3,000 and $7,000. A standard 8m x 4m rectangular fibreglass shell: $3,500-$5,500. A concrete pool with steps and a spa zone: $5,500-$8,500. Add $800-$1,800 if side-access is restricted and we need to mini-ex through a 800-900mm gate. Add $1,200-$2,500 for the surround drainage trench and electrical conduit. Spoil cart-away to a registered receiving site is included by default." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a pool excavation take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard 8m x 4m rectangular pool on an easy-access block: 1 day for the dig, plus a half-day for surround set-out and drainage trenching. Tight side-access through a 900mm gate: 1.5-2 days because the spoil shuttle is slower. Concrete pool with multiple depths and a spa zone: 2 days. We always finish the dig 3-5 days before the pool shell arrives so the pool builder can put it straight in without waiting." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you do pool digs with restricted side access?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — about half our Casey pool excavations involve tight side access. Bobcat S70 fits 920mm side gates; Kubota KX008 mini-excavator fits 800mm. For 750mm and under (older period homes) we use a Dingo or hand-barrow shuttle. We confirm the access width at the site visit and quote the right machine — never an excuse to drop a fence section without warning." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about spoil — where does the dirt go?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An 8m x 4m x 1.6m pool produces about 50m3 of spoil — three 6-wheel tipper loads. Default is full cart-away to a registered receiving site near Pakenham or Hampton Park (dump dockets in your handover folder). Some owners want spoil retained for landscape fill — we can stockpile a portion on site if there's room, no extra charge as long as we don't have to handle it twice." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you set out the surround for paving or coping?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. After the shell or concrete pool is in, we come back to finish the surround — strip topsoil from the pool surround area, lay compacted crushed-rock sub-base ready for paving, install paver edge restraints or screed sand bed, finish levels accurate to ±10mm for the paving crew. If a raised timber surround is going in instead, we excavate to the carpentry crew's footing layout." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will you hit groundwater on a Cranbourne pool dig?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sometimes — parts of Cranbourne West and Cranbourne South sit on shallow groundwater that appears below 1.2m. We pump the hole during excavation and the pool builder usually places the shell with the pump still running until the concrete or shell weight holds against the water table. We carry the pump and de-watering pit on every Cranbourne pool dig. Clyde is usually fine; Berwick and Narre Warren almost never an issue." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you coordinate with the pool builder?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we work with most of the major Casey pool builders (Aloha, Compass, Narellan, local installers) and follow their dig spec sheets. The pool builder confirms the dig dimensions, tolerances, base depth and any extra over-dig for plumbing. We dig to that spec, they place the shell. One mobilisation by us, one by the pool builder. Less for the homeowner to coordinate." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Excavation Berwick | Pool Digs Casey | (03) 9003 0108"
+  description="Pool excavation across the City of Casey — fibreglass and concrete pool digs, side-access specialists. Spoil cart-away included. Drainage trench and electrical conduit done in the same mobilisation. Free quote."
+  canonical="https://caseyearthworks.com.au/services/pool-excavation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Clean dig, spoil out, surround prepped</span>
+      <h1>Pool excavation in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Concrete or fibreglass pool digs across the City of Casey. Clean
+        rectangular or contoured profile to the pool builder&rsquo;s spec, all
+        spoil carted away to a registered receiving site, surround set out for
+        paving or coping, drainage trench and electrical conduit done in the
+        same mobilisation. Side-access through 800&ndash;920mm gates a specialty.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What a clean Casey pool dig looks like.</h2>
+      <div style="max-width: 65rem;">
+        <h3>The process.</h3>
+        <ol>
+          <li><strong>Site visit:</strong> measure the pool footprint, check side access, hand-test soil, check for groundwater, identify the legal stormwater discharge point.</li>
+          <li><strong>Dial Before You Dig:</strong> plan overlay 5 working days before the dig. Mark any services on the ground.</li>
+          <li><strong>Set out:</strong> peg the pool corners to the pool builder&rsquo;s dig spec, allow over-dig for plumbing as required.</li>
+          <li><strong>Dig:</strong> 5t excavator (or mini-ex on tight access). Clean spoil load straight into tippers &mdash; no spoil pile in the yard.</li>
+          <li><strong>De-water</strong> (where required): pump out and keep pumped through pool shell placement on Cranbourne West / Clyde sites.</li>
+          <li><strong>Trim:</strong> base level checked, sides plumb or contoured to spec, base scraped clean for the shell or rebar cage.</li>
+          <li><strong>Surround prep:</strong> after the shell is in, return to strip surround topsoil and lay sub-base for paving or coping.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Equipment for pool digs.</h3>
+        <ul>
+          <li><strong>5t excavator</strong> &mdash; main dig machine, standard side access</li>
+          <li><strong>Kubota KX008 mini-ex (800mm width)</strong> &mdash; restricted side access</li>
+          <li><strong>Bobcat S70 (920mm width)</strong> &mdash; spoil shuttle and surround grading</li>
+          <li><strong>Dingo / Kanga</strong> &mdash; sub-800mm side gates</li>
+          <li><strong>6-wheel and 8-wheel tippers</strong> &mdash; spoil cart-away</li>
+          <li><strong>Submersible pump + de-watering pit</strong> &mdash; for shallow-groundwater sites</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li><strong>Standard 8m &times; 4m rectangular fibreglass pool dig:</strong> $3,500&ndash;$5,500</li>
+          <li><strong>Concrete pool with steps and spa zone:</strong> $5,500&ndash;$8,500</li>
+          <li><strong>Add for restricted side-access (800&ndash;920mm gate):</strong> $800&ndash;$1,800</li>
+          <li><strong>Add for sub-800mm hand-barrow shuttle:</strong> $1,500&ndash;$3,000</li>
+          <li><strong>Add drainage trench + electrical conduit:</strong> $1,200&ndash;$2,500</li>
+          <li><strong>Spoil cart-away to registered receiving site:</strong> included</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Pool builder coordination.</h3>
+        <p>
+          We work with the major Casey pool builders (Aloha, Compass, Narellan
+          and local installers) and follow their dig spec sheets. The pool
+          builder confirms dig dimensions, tolerances, base depth and any
+          plumbing over-dig. We dig to that spec 3&ndash;5 days before the shell
+          arrives. They place the pool; we come back for surround prep.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free pool dig quote.</h2>
+        <p>Access check, soil hand-test, groundwater check. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

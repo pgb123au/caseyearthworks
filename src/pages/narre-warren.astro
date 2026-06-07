@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What earthworks jobs are common in Narre Warren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Narre Warren is established-suburb work — most homes are 1980s-2010s, so we're typically on extension footings, pool excavations, garage slab cuts, driveway replacements and drainage upgrades rather than full new-build site prep. Narre Warren North is a different beast: rural-residential acreage, larger driveway runs, shed pads, dam-edge work. Narre Warren South sits closer to the growth corridor with more new-build activity." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Narre Warren clay or sandy soil?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Mostly Class M reactive clay, especially in Narre Warren North where the Newer Volcanic clay belt comes through. Driveways and slabs here need a deeper sub-base (180-200mm crushed rock) or a lime-stabilised sub-grade or they crack within 5 years. Narre Warren South leans more toward Class P silty-loam — friendlier ground. The southern fringe approaching Hampton Park gets back into the reactive zone." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you do shed pads and rural driveways in Narre Warren North?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Narre Warren North acreage work is a big part of what we do. Typical jobs: 60m2 shed pad on compacted crushed rock ($3,500-$5,500), 150-300m of all-weather rural driveway with battered shoulders and pipe culverts ($8,000-$25,000 depending on length and finish), dam-edge stabilisation, paddock levelling for arenas or yards. We bring tippers and a watercart for the longer drives." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a Narre Warren pool excavation cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard 8m x 4m fibreglass or concrete pool excavation on a Narre Warren established block: $3,800-$6,500. Includes the dig, clean spoil cart-away, surround set-out for paving, and drainage trench to the legal stormwater point. Access constraints (narrow side gates, retained gardens, established trees) add cost — we quote that explicitly after the site visit, not as a vague allowance." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you replace existing driveways in Narre Warren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — older Narre Warren driveways from the 1980s-90s frequently fail because the original sub-base was 75-100mm of cracker dust rather than 150mm compacted crushed rock. We strip the old slab and rubble (cart away), excavate down to firm sub-grade, lay 150-180mm of new crushed rock compacted properly, then leave it ready for the concreter. Typical 60m2 driveway prep: $4,800-$7,500 not counting the concrete pour itself." }
+    },
+    {
+      "@type": "Question",
+      "name": "How tight an access can you fit through in Narre Warren?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Bobcat S70 fits 920mm — covers most 1990s-2010s Narre Warren side gates. Kubota KX008 mini-ex fits 800mm — covers tighter access including some Hallam-fringe properties. For 750mm and under (older period homes) we use a Dingo or hand-barrow with a wheel barrow shuttle. We confirm the access width at the site visit so we bring the right machine on day one." }
+    }
+  ]
+};
+---
+<Layout
+  title="Excavation & Bobcat Hire Narre Warren | Pool & Driveway Digs | (03) 9003 0108"
+  description="Excavation, bobcat hire and civil site-prep in Narre Warren, Narre Warren North and Narre Warren South — pool excavation, driveway replacement, shed pads, rural driveways, extension footings. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/narre-warren/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Narre Warren &middot; Narre Warren North &middot; Narre Warren South</span>
+      <h1>Excavation &amp; bobcat hire in <span class="accent">Narre Warren</span>.</h1>
+      <p class="hero-sub">
+        Narre Warren is established-suburb work &mdash; pool digs, extension footings,
+        garage pads, driveway replacements where the original 1990s sub-base has
+        failed. Narre Warren North adds rural-residential shed pads and long
+        all-weather driveways. Reactive clay across most of the suburb &mdash;
+        sub-base matters here.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Narre Warren</span>
+      <h2>The Narre Warren earthworks story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Established-suburb job mix.</h3>
+        <p>
+          Most Narre Warren homes are 1980s&ndash;2010s, so we&rsquo;re typically
+          on retrofit work rather than green-field site prep: pool excavations,
+          extension and granny-flat footings, garage slab cuts, driveway
+          replacements, drainage upgrades, retaining-wall trenches. Narre Warren
+          South sits closer to the growth corridor and has more new-build
+          activity. Narre Warren North is rural-residential acreage &mdash; a
+          different job profile entirely.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Class M reactive clay &mdash; deeper sub-base or lime stabilise.</h3>
+        <p>
+          Narre Warren mostly sits on Newer Volcanic reactive clay (Class M to
+          M-D under AS 2870), especially in Narre Warren North. That 30&ndash;50mm
+          seasonal swell is exactly why so many 1990s driveways have lifted and
+          cracked. We default to <strong>180&ndash;200mm crushed-rock sub-base</strong>
+          on reactive sites (vs the standard 150mm on Class P/M soil), or
+          lime-stabilise the sub-grade where shear strength is low. That&rsquo;s
+          the difference between a 5-year driveway and a 25-year driveway.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Narre Warren North acreage work.</h3>
+        <p>
+          Acreage blocks need different gear and a different mindset. Long rural
+          driveways (150&ndash;300m) need battered shoulders, pipe culverts under
+          natural drainage lines, and proper compaction or they corrugate in the
+          first wet winter. Shed pads need either crushed rock compacted to 95%
+          SMDD or a full concrete slab base. We bring tippers, a watercart and
+          our 8t excavator for the longer drives.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Narre Warren jobs.</h3>
+        <ul>
+          <li>Pool excavation 8m &times; 4m on established block with side access ($3.8K&ndash;$6.5K)</li>
+          <li>Driveway replacement strip + sub-base prep, 60m&sup2; ($4.8K&ndash;$7.5K)</li>
+          <li>Extension or granny-flat footings on Class M clay ($2.5K&ndash;$4.5K)</li>
+          <li>Narre Warren North shed pad 60m&sup2; ($3.5K&ndash;$5.5K)</li>
+          <li>Narre Warren North 200m rural driveway with culverts ($14K&ndash;$22K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Narre Warren site visit.</h2>
+        <p>Established-block access check, soil hand-test, accurate quote inside 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,285 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does a day of bobcat hire or excavator hire cost across the City of Casey in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Wet-hire rates with experienced operator and chase-vehicle setup across Berwick, Cranbourne, Narre Warren and the wider Casey LGA: Bobcat S-series skid-steer $850-$1,200/day; Kubota mini-excavator (1.7t) $900-$1,200/day; 5t excavator $1,100-$1,500/day; 8t excavator $1,400-$1,800/day; tipper truck (6-wheeler) $850-$1,100/day; watercart $700-$900/day. A typical small residential site (drive prep, footing dig, spoil cart-away) lands $2,400-$4,800. Full new-build site cut and fill on a Clyde or Officer block runs $4,000-$15,000 depending on volume." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need council approval for excavation or earthworks in the City of Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Small residential cut/fill under 1m depth on a single block usually doesn't need a planning permit if it's connected to an approved building permit. Bulk earthworks over 100m3 of cut/fill, or any work in a Vegetation Protection Overlay, Significant Landscape Overlay or Heritage Overlay, will need City of Casey planning approval first. Commercial sites are governed by AS 3798 (Guidelines on earthworks for commercial and residential developments) with compaction testing every 250m2 minimum. We confirm the permit pathway at the free site visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the clay so bad east of Hallam — and what does that mean for my site prep?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The strip from Hallam through Endeavour Hills, Hampton Park and into the eastern Cranbourne fringe sits on highly reactive Newer Volcanic clay (Class M to H1 in AS 2870 terms). It swells 30-50mm wet vs dry, which is what cracks driveways, lifts house slabs and floats poorly-prepped concrete pads. On these blocks we always engineer the sub-base properly — strip topsoil 300mm, lime-stabilise the subgrade where shear strength is too low, lay 150-200mm crushed-rock sub-base in 100mm lifts and compaction-test with a nuclear densometer at each lift. Skipping that saves $1,200 on day one and costs $15,000 in slab repair five years later." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between dry hire and wet hire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dry hire = the machine on your site, you supply the operator (and the float fees, fuel and insurance). Wet hire = we deliver the machine, run it, fuel it, insure it and walk off with it. For 95% of residential and small-commercial jobs across Casey, wet hire is the right call — you're paying for experience, not a steering wheel. Our wet-hire rates already include the operator, fuel, public liability, chase ute and float-on / float-off transport within 30km of Berwick." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does winter weather affect excavation in the City of Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Casey gets 700-800mm rainfall mostly between May and October. On reactive clay sites, working ground that's saturated turns a $2k driveway sub-base into an $8k bog rescue. We monitor BOM forecasts, schedule clay-heavy jobs (Hallam, Endeavour Hills, Hampton Park east) for the May-October window only when there's a 5-7 day dry run, and keep silty-loam sites (north Berwick, Cranbourne South) running year-round. Foundation digs and emergency drainage are 12-month work — we tarp, sandbag and pump as needed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you take the spoil away — or do I have to find a tip?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — our quotes are spoil-included by default. We run our own tippers (6 and 8-wheel) so you don't pay a separate cart-away contractor. Clean fill goes to legitimate Class A or Class B receiving sites near Pakenham and Hampton Park; contaminated spoil (asbestos suspect, fuel-affected, building rubble) is segregated and ticketed properly. You see the dump-docket trail with the final invoice." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does AS 3798 compliance actually mean for my project?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 3798 is the Australian Standard that governs commercial and residential earthworks — bulk and structural fill, compaction testing, layer thickness, supervision levels. For commercial work in Casey (warehouse pads, civil subdivisions, school car parks) it's mandatory and a Level 1 geotechnical supervisor signs off each lift. For residential work it's best-practice rather than legal requirement, but it's how we run every job — 100mm max lifts, compacted to 95% standard maximum dry density on driveways and 98% on foundation pads, with documented test results in your handover folder." }
+    }
+  ]
+};
+---
+<Layout
+  title="Casey Earthworks | Bobcat Hire, Excavation & Site Prep | (03) 9003 0108"
+  description="Owner-operator excavation, bobcat hire and civil site-prep contractors for Berwick, Cranbourne, Narre Warren, Hampton Park and Endeavour Hills. Site cut and fill, driveway prep, footing digs, pool excavation, drainage trenching. AS 3798 compliant. Free on-site quote.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Berwick &middot; Cranbourne &middot; Narre Warren &middot; Hampton Park &middot; Endeavour Hills</span>
+      <h1>Casey&rsquo;s owner-operator <span class="accent">excavation &amp; bobcat hire</span> crew.</h1>
+      <p class="hero-sub">
+        Hi, I&rsquo;m Mark Holloway. I&rsquo;ve been on a bobcat or excavator stick somewhere
+        between Berwick and Pakenham for more than 20 years. Site cut and fill, driveway
+        sub-base, footings, pool digs, stormwater and service trenching across the City
+        of Casey. Owner on site every job. Fully insured, AS 3798 compliant.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>20+ yrs</strong>On the stick across SE Melbourne</div>
+        <div><strong>$1.5K&ndash;$8K</strong>Typical daily project value</div>
+        <div><strong>AS 3798</strong>Earthworks compliance by default</div>
+        <div><strong>Insured</strong>$20M public liability cover</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five jobs we&rsquo;re on every week.</h2>
+      <p class="section-lead">
+        From a half-day bobcat callout to strip topsoil before a slab, through to a
+        three-week bulk-earthworks contract on a Clyde subdivision. Owner on site,
+        compaction-tested, spoil included.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/site-cut-and-fill/">
+          <div class="svc-icon" aria-hidden="true">&#9698;</div>
+          <h3>Site cut &amp; fill</h3>
+          <p>Bulk earthworks for new builds. Strip topsoil, cut the high side, batter the low side, engineer-tested compaction in 100mm lifts. Single-block residential through to commercial pads. ~$4K-$15K typical.</p>
+          <span class="svc-link">See site cut &amp; fill &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/driveway-preparation/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Driveway preparation</h3>
+          <p>Sub-base prep and grading for new driveways. Strip, sub-grade roll, lay 150-200mm crushed rock, compact to 95% SMDD. Ready for concrete or asphalt. ~$80-$140/m&sup2;.</p>
+          <span class="svc-link">See driveway prep &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/foundation-excavation/">
+          <div class="svc-icon" aria-hidden="true">&#9633;</div>
+          <h3>Foundation excavation</h3>
+          <p>Footings, slab cuts, retaining trenches. Strip-footings, pad-footings, piered footings on reactive Class M/H clay. Engineer-spec depth, neat edges, clean batter. From $1,800 a day.</p>
+          <span class="svc-link">See foundation digs &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-excavation/">
+          <div class="svc-icon" aria-hidden="true">&#9711;</div>
+          <h3>Pool excavation</h3>
+          <p>Concrete or fibreglass pool digs. Clean rectangular or contoured profile, spoil out, surround set-out for paving or paved entertaining areas. Access-restricted backyards a specialty (mini-ex through side gates). $3K-$7K typical.</p>
+          <span class="svc-link">See pool digs &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/drainage-trenching/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Drainage trenching</h3>
+          <p>Stormwater, sewer connections, electrical and gas trenching. Mini-ex with chase-grade laser, neat 300-450mm wide trench, backfill and reinstate. $80-$150/lin.m depending on depth and soil.</p>
+          <span class="svc-link">See drainage trenching &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Perfectly graded and levelled site ready for the slab" loading="lazy" decoding="async" />
+    <figcaption>Site cuts, trenching, pool excavation, drainage.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Casey-local crew</span>
+      <h2>Three things that decide whether a Casey earthworks job stays on budget.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>The clay belt east of Hallam.</h3>
+          <p>
+            The strip from Hallam through Endeavour Hills, Hampton Park and into
+            eastern Cranbourne is reactive Newer Volcanic clay &mdash; Class M to H1
+            under AS 2870, with 30&ndash;50mm seasonal swell. Slab on un-stabilised
+            clay cracks within 5 years. We strip 300mm of topsoil, lime-stabilise
+            where shear strength is low, then build the pad up in 100mm crushed-rock
+            lifts compacted to 98% standard maximum dry density. Test results in
+            your handover folder.
+          </p>
+        </div>
+        <div>
+          <h3>The Casey new-build pipeline.</h3>
+          <p>
+            Officer, Pakenham, Clyde and Cranbourne East are some of Australia&rsquo;s
+            fastest-growing release areas &mdash; 1,200+ new dwellings each year
+            inside the City of Casey LGA. That means constant demand for site prep,
+            driveway sub-base and footing excavation. We&rsquo;re booked on the
+            same estates week after week, which means our equipment lives within
+            15 minutes of every Casey job &mdash; float fees are usually zero.
+          </p>
+        </div>
+        <div>
+          <h3>Compaction is the line between &ldquo;working&rdquo; and &ldquo;done&rdquo;.</h3>
+          <p>
+            The number-one reason a slab cracks, a driveway humps or a sewer line
+            collapses is bad compaction beneath it. AS 3798 says lifts not more than
+            150mm (we run 100mm), compact each lift before the next, and test to a
+            documented standard maximum dry density. Civil sites get nuclear densometer
+            results every 250m&sup2;. Residential sites get hand-test confirmation and
+            the operator&rsquo;s 20 years of feel for whether the ground will move.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we work.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Full City of Casey coverage from Endeavour Hills in the north-west to Clyde
+        and Cranbourne South in the south-east. Float fees zero within 30km of
+        Berwick.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">City of Casey</a>
+        <span class="area-pill area-pill-static">Officer</span>
+        <span class="area-pill area-pill-static">Clyde</span>
+        <span class="area-pill area-pill-static">Clyde North</span>
+        <span class="area-pill area-pill-static">Pakenham</span>
+        <span class="area-pill area-pill-static">Hallam</span>
+        <span class="area-pill area-pill-static">Lynbrook</span>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="Excavator bucket teeth scooping soil close-up" loading="lazy" decoding="async" />
+    <figcaption>Dial Before You Dig on every job. $20M insured.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From phone call to compaction docket &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free site visit</h3><p>I drive out, look at the access, the soil, the slope, the spoil-cart-away path. 30 minutes. No obligation.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Fixed quote</h3><p>Written quote within 48 hours. Daily rate or fixed-price (we recommend fixed for anything over 2 days). Inclusions and exclusions in plain English.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Schedule</h3><p>Booking confirmed once deposit is paid. We give you the BOM window we&rsquo;re aiming for &mdash; clay-heavy jobs only run in dry weather forecasts.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Execute</h3><p>Equipment on site at 7am. Owner-operated. Daily progress photos. Spoil out as we go &mdash; no piles left for the builder.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Sign-off</h3><p>Compaction test results, dump dockets, before/after photos and invoice in your handover folder. Builder takes over from a clean pad.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free on-site quote.</h2>
+        <p>30 minutes on your block. I look at access, soil, slope and spoil path. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

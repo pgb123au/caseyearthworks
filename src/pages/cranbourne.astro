@@ -1,0 +1,138 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Cranbourne busy for new-build excavation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Very. Cranbourne East and Cranbourne South sit at the southern end of Casey's growth corridor — Avon, Lochaven and Eliston estates have hundreds of new-build slabs each year. Cranbourne West and the Botanic Ridge release area are also active. Our standard week in Cranbourne is a mix of site cut and fill on new estate blocks, driveway sub-base on completed houses waiting for concrete, and footing digs for extensions on older central Cranbourne homes." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the soil like in Cranbourne?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most of Cranbourne sits on silty-loam over sandy clay — AS 2870 Class P to M. Much more forgiving than the reactive-clay belt to the north. Standard 150mm crushed-rock sub-base usually works for driveways and slabs. The exception is parts of Cranbourne West and the Botanic Ridge fringe where shallow groundwater appears below 1.2m — we pump and de-water before deep footing or pool work in that area." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does site cut and fill cost on a typical Cranbourne new build?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Single-storey 250-300m2 house pad on a flat estate block (Eliston, Lochaven, Avon): $4,500-$7,000 covering topsoil strip, sub-grade roll, 150mm sub-base compacted in 2 lifts, driveway crossover prep. Two-storey on a sloping block needs cut, fill and batter — $7,000-$10,500. Add $1,200-$2,500 if the estate engineer specs lime stabilisation. Pool dig on a Cranbourne East block typically $3,200-$5,500." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on small estate blocks with builder access already established?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — most new Cranbourne East estates (Eliston, Avon, Lochaven) have 12.5m-15m frontages with established crossover access. Our 5t excavator and bobcat fit comfortably. Where the builder hasn't put a crossover in yet, we either work off the temporary nature-strip access or do the crossover sub-base as part of the same job. Saves you booking two trades." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do drainage trenching for Cranbourne pool installs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — pool digs always come with drainage trenching: pool overflow to legal stormwater point, surround drainage to prevent saturated paving, and electrical conduit trench from the meter to the equipment pad. $1,200-$2,500 added to a pool dig depending on the length of run and depth required. Cleaner to do it all in one mobilisation than book separate trades." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the lead time for a Cranbourne excavation job?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We're usually 2-3 weeks out for residential bookings. Urgent work (a builder's pre-pour deadline, a failed pool dig that needs rescuing) we can sometimes squeeze in within a week. Best practice is to book the site visit as soon as the building permit lands — we'll lock in the schedule then so we're ready when the slab is. Footings and driveway prep don't slip because we run our own crew, not subbies." }
+    }
+  ]
+};
+---
+<Layout
+  title="Excavation & Bobcat Hire Cranbourne | New-Build Site Prep | (03) 9003 0108"
+  description="Excavation, bobcat hire and civil site-prep in Cranbourne — Eliston, Lochaven, Avon, Botanic Ridge. New-build site cut and fill, driveway sub-base, footings, pool excavation. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/cranbourne/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cranbourne &middot; Cranbourne East &middot; Cranbourne South &middot; Botanic Ridge</span>
+      <h1>Excavation &amp; bobcat hire in <span class="accent">Cranbourne</span>.</h1>
+      <p class="hero-sub">
+        Cranbourne is volume work for us &mdash; Eliston, Lochaven, Avon and the
+        Botanic Ridge release area are some of Casey&rsquo;s busiest new-build
+        estates. Forgiving silty-loam soil, established estate access, slab-on-ground
+        houses every week. Our gear is on a Cranbourne site somewhere most days.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Cranbourne</span>
+      <h2>The Cranbourne earthworks story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Volume new-build market.</h3>
+        <p>
+          Cranbourne East and Cranbourne South are at the southern engine room of
+          the Casey growth corridor. Eliston, Lochaven, Avon and Botanic Ridge are
+          delivering hundreds of slab-on-ground homes every year. We&rsquo;re on
+          a Cranbourne estate site multiple times a week &mdash; topsoil strip,
+          sub-base lay, driveway crossover prep, retaining-wall footings.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Forgiving silty-loam soil.</h3>
+        <p>
+          Most of Cranbourne sits on silty-loam over sandy clay &mdash; AS 2870
+          Class P to M. That&rsquo;s much friendlier than the reactive Class M/H
+          clay belt up around Endeavour Hills. Standard 150mm crushed-rock sub-base
+          compacted in two lifts usually does the job for driveways and slabs.
+          The exceptions: parts of Cranbourne West and the Botanic Ridge fringe
+          where groundwater appears below 1.2m &mdash; pool digs and deep footings
+          there need pumping and de-watering before excavation.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Estate access is straightforward.</h3>
+        <p>
+          12.5m&ndash;15m typical frontage with established crossovers. Our 5t
+          excavator and bobcat get straight in with no fence drops. Where the
+          crossover isn&rsquo;t in yet we do the crossover sub-base as part of
+          the same mobilisation &mdash; one less trade for the builder to
+          coordinate.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Cranbourne jobs.</h3>
+        <ul>
+          <li>Eliston / Lochaven single-storey 250m&sup2; site cut and fill ($4.5K&ndash;$7K)</li>
+          <li>Two-storey Cranbourne East new-build with cut, fill and batter ($7K&ndash;$10.5K)</li>
+          <li>Pool excavation + drainage + electrical conduit on established block ($4.5K&ndash;$8K)</li>
+          <li>Driveway sub-base 80&ndash;120m&sup2; ready for concrete pour ($6K&ndash;$10K)</li>
+          <li>Garage slab footings + extension cut on older central Cranbourne home ($2.5K&ndash;$4.5K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Cranbourne site visit.</h2>
+        <p>New-build, pool dig, footing job &mdash; same 30-minute visit, same 48-hour quote.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

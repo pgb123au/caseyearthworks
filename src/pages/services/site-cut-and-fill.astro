@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does site cut and fill actually involve?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Site cut and fill is the bulk-earthworks stage of any new build: strip topsoil 200-300mm (segregate for reuse on landscape), cut the high side of the block to slab level, batter the cut face to a stable slope, deposit and compact the cut material as engineered fill on the low side in 100mm lifts to 95% standard maximum dry density, prepare the final pad surface ready for the builder. Add lime stabilisation where the sub-grade strength is too low. Add retaining-wall trenches where the batter can't go to natural slope." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a typical Casey site cut and fill cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Single-storey 250-300m2 house pad on a flat block (Eliston, Lochaven, Avon, Officer): $4,500-$7,500. Two-storey on a sloping block with cut, fill and batter: $7,000-$12,000. Reactive-clay sites (Endeavour Hills, Hampton Park, Hallam) add $1,500-$3,000 for lime stabilisation. Bulk commercial site (warehouse pad, school car park) is quoted per m3 — typically $14-$22/m3 for material moved on-site, $28-$45/m3 if cart-away is required." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's AS 3798 and why does it matter for my pad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS 3798 — 'Guidelines on earthworks for commercial and residential developments' — is the Australian Standard governing how engineered fill is placed and compacted. Key requirements: maximum 150mm loose lift (we run 100mm), compact each lift before placing the next, document compaction density via nuclear densometer or sand-cone testing at minimum every 250m2 per lift, supervisor sign-off at each level. For commercial sites it's mandatory and a Level 1 geotechnical supervisor is present. For residential it's best-practice — and it's how we run every job." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do bulk earthworks for subdivisions?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — small civil subdivisions (under 20 lots) are within scope for our crew. Larger subdivisions and bulk commercial earthworks (warehouses, infrastructure) we'll quote but often work alongside the principal contractor's plant — we bring the precision finish work after the bulk earthmovers have moved the volume. We carry the engineer reports, AS 3798 inspection sign-offs and dump dockets you'll need for handover." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a residential site cut and fill take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A flat block, single-storey, no rock: 1-2 days. Sloping block with cut and batter: 2-4 days. Reactive-clay site with lime stabilisation curing: add 24-48 hours between lime treatment and the first lift placement. Bulk subdivision earthworks 5-20 days depending on volume. We give a fixed program at quoting so the builder can lock in the slab pour date." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to the spoil?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Where possible we balance the site — cut material becomes engineered fill on the low side, no cart-away. Where there's net excess, we cart to a legitimate Class A or Class B receiving site near Pakenham or Hampton Park; dump dockets in your handover folder. Topsoil is stockpiled and either reused for landscape areas or carted off as the client prefers. Contaminated spoil (suspected asbestos, fuel, building rubble) is segregated and ticketed separately." }
+    },
+    {
+      "@type": "Question",
+      "name": "What weather stops you working?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Compaction work needs the right moisture content — too wet and you can't compact, too dry and the material won't bond. On reactive clay sites we don't start a cut-and-fill if forecast rain is more than 15mm in the working week. On sandy / silty sites we work in light rain with tarps over the active pad. Worksafe-mandated stop for any electrical storm or wind over 60km/h. We watch the BOM forecast daily and reschedule rather than push through and redo." }
+    }
+  ]
+};
+---
+<Layout
+  title="Site Cut & Fill Berwick | Bulk Earthworks Casey | (03) 9003 0108"
+  description="Site cut and fill across the City of Casey — Berwick, Cranbourne, Narre Warren, Officer, Clyde. Bulk earthworks for new builds, engineered fill, AS 3798 compliant compaction, lime stabilisation. Free quote."
+  canonical="https://caseyearthworks.com.au/services/site-cut-and-fill/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Bulk earthworks &middot; engineered fill &middot; AS 3798</span>
+      <h1>Site cut &amp; fill across <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Strip the topsoil. Cut the high side. Batter the cut face. Build the
+        low side up as engineered fill, 100mm lifts, compacted to 95% standard
+        maximum dry density. Lime stabilisation on reactive clay where the
+        sub-grade needs it. Compaction tested. Documented. Done right.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What a proper Casey site cut and fill looks like.</h2>
+      <div style="max-width: 65rem;">
+        <h3>The seven stages.</h3>
+        <ol>
+          <li><strong>Topsoil strip:</strong> 200&ndash;300mm of topsoil stripped and stockpiled. Reused on landscape or carted off &mdash; your call.</li>
+          <li><strong>Set out:</strong> peg the pad corners, the cut/fill line, the batter angles. Surveyed where the engineer specs that.</li>
+          <li><strong>Cut:</strong> remove material from the high side of the block to the slab-level datum. Batter the cut face to a stable slope (1:1 sandy, 1:0.75 stiff clay).</li>
+          <li><strong>Sub-grade test:</strong> hand-test or nuclear densometer the exposed sub-grade. Lime-stabilise if shear strength is too low &mdash; standard practice on the Endeavour Hills / Hampton Park / Hallam reactive-clay belt.</li>
+          <li><strong>Fill:</strong> deposit cut material on the low side as engineered fill. 100mm loose lifts. Compact each lift to 95% SMDD before the next. Watercart adjusts moisture content to optimum.</li>
+          <li><strong>Final trim:</strong> precision-trim the slab-level surface and the driveway sub-base interface. Edges crisp, levels accurate to ±15mm.</li>
+          <li><strong>Hand-over:</strong> compaction test results, dump dockets, photos, AS 3798 sign-off where applicable, into your handover folder.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Equipment we bring.</h3>
+        <ul>
+          <li><strong>Bobcat S-series skid steer</strong> &mdash; topsoil strip, fine grading, tight pad work</li>
+          <li><strong>1.7t / 5t / 8t excavators</strong> &mdash; bulk cuts, batter forming, footing trenches, depending on volume</li>
+          <li><strong>Tippers (6-wheel and 8-wheel)</strong> &mdash; spoil cart-away, fill material delivery</li>
+          <li><strong>Vibratory smooth-drum roller</strong> &mdash; compaction on each lift</li>
+          <li><strong>Watercart</strong> &mdash; moisture conditioning, dust suppression</li>
+          <li><strong>Nuclear densometer</strong> &mdash; compaction testing on civil and engineered sites</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Rates.</h3>
+        <ul>
+          <li><strong>Bobcat S-series wet hire:</strong> $850&ndash;$1,200/day</li>
+          <li><strong>5t excavator wet hire:</strong> $1,100&ndash;$1,500/day</li>
+          <li><strong>8t excavator wet hire:</strong> $1,400&ndash;$1,800/day</li>
+          <li><strong>Tipper truck (6-wheel):</strong> $850&ndash;$1,100/day</li>
+          <li><strong>Watercart:</strong> $700&ndash;$900/day</li>
+          <li><strong>Fixed-price residential site cut &amp; fill:</strong> $4,000&ndash;$15,000 typical</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Compliance.</h3>
+        <p>
+          AS 3798 (Guidelines on earthworks for commercial and residential
+          developments) on every site &mdash; mandatory on commercial, best
+          practice on residential. AS 2870 sub-grade classification informs
+          sub-base spec. Worksafe VIC trench-safety SWMS for any work over
+          1.5m deep. $20M public liability + workers comp current; certificates
+          before any deposit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free site cut &amp; fill quote.</h2>
+        <p>30 minutes on your block. Slope, soil and access checked. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

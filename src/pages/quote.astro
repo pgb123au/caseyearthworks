@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Excavation Quote | Bobcat Hire & Site Prep Casey | (03) 9003 0108"
+  description="Get a free on-site quote for your Berwick, Cranbourne, Narre Warren, Hampton Park or Endeavour Hills excavation, bobcat hire or site-prep job. 30-min visit + fixed quote within 48 hours."
+  canonical="https://caseyearthworks.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Site Visit</span>
+      <h1>Book your free on-site quote.</h1>
+      <p class="hero-sub">
+        Tell us about your block and the job you need done. We&rsquo;ll come
+        on-site for a 30-min visit, hand-test the soil, check access and slope,
+        and walk through the right approach. Fixed-price quote within 48 hours.
+        Free, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Berwick 3806, Cranbourne 3977, Endeavour Hills 3802" />
+
+            <label for="format">What kind of job is it?</label>
+            <select id="format" name="format">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="site-cut-and-fill">Site cut and fill (new build)</option>
+              <option value="driveway-prep">Driveway preparation / sub-base</option>
+              <option value="driveway-replacement">Driveway replacement (strip existing slab)</option>
+              <option value="foundation-excavation">Foundation excavation / footings</option>
+              <option value="pool-excavation">Pool excavation</option>
+              <option value="drainage-trenching">Drainage / sewer / service trenching</option>
+              <option value="retaining-wall-prep">Retaining-wall trench / batter</option>
+              <option value="shed-pad">Shed pad / outbuilding base</option>
+              <option value="rural-driveway">Rural / acreage driveway</option>
+              <option value="other">Other earthworks</option>
+            </select>
+
+            <label for="purpose">Project context?</label>
+            <select id="purpose" name="purpose">
+              <option value="new-build">New home build</option>
+              <option value="extension">Extension / renovation</option>
+              <option value="pool-install">Pool installation</option>
+              <option value="driveway-replacement">Driveway replacement</option>
+              <option value="drainage-fix">Drainage rectification</option>
+              <option value="commercial">Commercial / civil site</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="size">Approximate size</label>
+            <select id="size" name="size">
+              <option value="not-sure">Not sure</option>
+              <option value="small">Small (under half a day)</option>
+              <option value="medium">Medium (1-2 days)</option>
+              <option value="large">Large (3-5 days)</option>
+              <option value="extra-large">Extra large (1+ weeks)</option>
+              <option value="commercial">Commercial / civil scale</option>
+            </select>
+
+            <label for="soil-zone">Do you know the soil classification?</label>
+            <select id="soil-zone" name="soil-zone">
+              <option value="not-sure">Not sure &mdash; please hand-test at site visit</option>
+              <option value="class-p-m">Class P/M silty-loam (Cranbourne, Officer, Clyde, north Berwick)</option>
+              <option value="class-m">Class M reactive clay (central Berwick, Narre Warren South)</option>
+              <option value="class-m-h">Class M/H1 reactive clay (Endeavour Hills, Hampton Park, Hallam)</option>
+              <option value="geotech-report">I have a geotech report</option>
+            </select>
+
+            <label for="timeframe">When do you need it done?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">ASAP &mdash; next 2 weeks</option>
+              <option value="3-6-weeks">3-6 weeks</option>
+              <option value="builder-deadline">Tied to a builder&rsquo;s deadline</option>
+              <option value="12+">12+ weeks (planning stage)</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Block size, slope, side access width, known services, building permit reference, dimensions, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;6pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full City of Casey &mdash; Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills, plus Officer, Clyde, Pakenham. Float fees zero within 30km of Berwick.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free 30-minute on-site visit</li>
+                <li>Soil hand-test + access check</li>
+                <li>Fixed-price written quote within 48 hours</li>
+                <li>AS 3798 compliant, Worksafe SWMS</li>
+                <li>$20M public liability, workers comp current</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

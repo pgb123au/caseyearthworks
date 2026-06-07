@@ -1,0 +1,286 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Half-day or full-day?", "acceptedAnswer": {"@type": "Answer", "text": "Mini-excavator + operator min ~4 hours ($480). Most domestic jobs done in a day. Full-day $680–$980."}}, {"@type": "Question", "name": "Spoil disposal — who pays?", "acceptedAnswer": {"@type": "Answer", "text": "Tip fees included in our quotes (transparent). $50/cubic m local tip; contaminated soil $180+/cube; reactive clay $80–$120."}}, {"@type": "Question", "name": "Dial Before You Dig?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — always lodged 5 working days before excavation. Free service. Required by law."}}, {"@type": "Question", "name": "Insurance — what level?", "acceptedAnswer": {"@type": "Answer", "text": "$20M public liability + WorkCover. Verifiable certificate on request."}}, {"@type": "Question", "name": "Can you do urgent jobs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — same-day mini-excavator for emergency drainage / water-main breaks. After-hours rate applies."}}, {"@type": "Question", "name": "Soil import?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — clean fill or road-base delivered + spread + compacted. Per-cubic-m rates."}}, {"@type": "Question", "name": "Owner-supplied fill — can I save?", "acceptedAnswer": {"@type": "Answer", "text": "Only if compaction-tested + contamination-cleared. Otherwise you risk failing the slab compaction inspection."}}]};
+const serviceSchema = {"@context": "https://schema.org", "@type": "Service", "serviceType": "Earthworks and excavation", "provider": {"@type": "GeneralContractor", "name": "Casey Earthworks", "telephone": "+61390030108", "url": "https://caseyearthworks.com.au", "areaServed": {"@type": "City", "name": "the City of Casey"}}, "areaServed": "the City of Casey", "url": "https://caseyearthworks.com.au/pricing/", "offers": {"@type": "AggregateOffer", "priceCurrency": "AUD", "lowPrice": "80", "highPrice": "180000", "offerCount": "16"}};
+const breadcrumbSchema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://caseyearthworks.com.au/"}, {"@type": "ListItem", "position": 2, "name": "Pricing", "item": "https://caseyearthworks.com.au/pricing/"}]};
+---
+<Layout
+  title="Earthworks prices in the City of Casey 2026 | (03) 9003 0108"
+  description="Earthworks prices in the City of Casey — excavation, fill, trenching, site prep. Mini-excavator to 20-tonne. 2026 rates. Call (03) 9003 0108."
+  canonical="https://caseyearthworks.com.au/pricing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Site cut, fill, trench, drainage — bobcat + excavator</span>
+      <h1>Earthworks and excavation prices in the City of Casey — 2026 guide</h1>
+      <p class="hero-sub">Earthworks in the City of Casey sit between $480 (small post-hole job, half-day mini-excavator) and $25,000+ (full house pad cut + fill on a sloping block). The big cost drivers are material type (clay vs rock), spoil disposal, and machine size.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a written quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <p class="lead">Below are realistic 2026 ranges. Every quote includes machine hire, operator, and a stated spoil-disposal pathway. Call (03) 9003 0108 for an exact quote.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Typical 2026 prices for earthworks and excavation in the City of Casey</h2>
+      <p>Real ranges from our books, not made-up averages. Every quote we issue is itemised against the work below.</p>
+        <table class="pricing-table">
+          <thead><tr><th>Service</th><th>Typical range (AU 2026)</th><th>What's included</th></tr></thead>
+          <tbody>
+            <tr>
+              <td data-label="Service"><strong>Mini-excavator hire + operator (per day)</strong></td>
+              <td data-label="Price"><span class="price-range">$680 – $980</span></td>
+              <td data-label="Note">1.7-tonne machine. Most domestic jobs.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>3-tonne excavator + operator (per day)</strong></td>
+              <td data-label="Price"><span class="price-range">$880 – $1,200</span></td>
+              <td data-label="Note">Mid-size domestic + light commercial.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>5-tonne excavator + operator (per day)</strong></td>
+              <td data-label="Price"><span class="price-range">$1,200 – $1,600</span></td>
+              <td data-label="Note">Larger pads + commercial.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Bobcat + operator (per day)</strong></td>
+              <td data-label="Price"><span class="price-range">$680 – $980</span></td>
+              <td data-label="Note">Skid-steer, smaller fenced jobs.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Tipper (per truck-load)</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $480</span></td>
+              <td data-label="Note">8-tonne truck. Spoil removal.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Truck + dog (larger spoil removal)</strong></td>
+              <td data-label="Price"><span class="price-range">$480 – $880</span></td>
+              <td data-label="Note">20-tonne. Bulk earthworks.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Trenching — drainage / services (per linear m)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $95 per m</span></td>
+              <td data-label="Note">600mm deep × 300mm wide. Backfill not included.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Site cut + level (small house pad, ~150sqm)</strong></td>
+              <td data-label="Price"><span class="price-range">$3,500 – $8,500</span></td>
+              <td data-label="Note">Excavation + grading. Spoil disposal extra.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Site cut + level (medium, ~250sqm)</strong></td>
+              <td data-label="Price"><span class="price-range">$8,500 – $15,500</span></td>
+              <td data-label="Note"></td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Site cut + level (large / sloping)</strong></td>
+              <td data-label="Price"><span class="price-range">$15,500 – $35,000+</span></td>
+              <td data-label="Note">Engineered cut + retaining walls.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Fill + compaction (per cubic m delivered + spread)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $85</span></td>
+              <td data-label="Note">Clay / road base / sand.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Rock breaking (per hour)</strong></td>
+              <td data-label="Price"><span class="price-range">+$220 – $380 per hour</span></td>
+              <td data-label="Note">Hammer hire on top of base machine rate.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Driveway preparation (cut + base)</strong></td>
+              <td data-label="Price"><span class="price-range">$45 – $85 per sqm</span></td>
+              <td data-label="Note">Before paving / concrete.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Pool excavation (typical 8×4m pool)</strong></td>
+              <td data-label="Price"><span class="price-range">$5,500 – $12,500</span></td>
+              <td data-label="Note">Excavation + spoil disposal.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Stump removal (machinery)</strong></td>
+              <td data-label="Price"><span class="price-range">$280 – $880</span></td>
+              <td data-label="Note">Per stump with machine.</td>
+            </tr>
+            <tr>
+              <td data-label="Service"><strong>Site survey / set-out</strong></td>
+              <td data-label="Price"><span class="price-range">$680 – $1,400</span></td>
+              <td data-label="Note">Pre-excavation establishing levels + boundaries.</td>
+            </tr>
+          </tbody>
+        </table>
+      <p class="table-foot"><em>Prices indicative for the City of Casey in 2026. Final quote depends on your site — call (03) 9003 0108 for an exact number.</em></p>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card">
+      <div class="cta-card-body">
+        <h3>Need an exact price for your job?</h3>
+        <p>Most quotes ready within 24 hours of the site visit. No-obligation, free, written.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Online quote form</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What changes the price on your job</h2>
+      <p>The ranges above are the starting point. These five factors are what move a quote up or down within (or sometimes outside) those bands.</p>
+        <ol class="numbered-list">
+          <li>Material — clay easy, rock hard (hammer required), bedrock $$$.</li>
+          <li>Spoil disposal — local tip $50/cubic m, contaminated soil $$$.</li>
+          <li>Access — narrow gates, tight access requires smaller machine (slower).</li>
+          <li>Volume — under 50 cubic m fixed-cost premium; bulk earthworks per-cube cheaper.</li>
+          <li>Engineering — sloping sites often need engineered cut + retaining wall design.</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-warn">
+    <div class="section-inner">
+      <h2>Red flags &mdash; what to watch for in quotes</h2>
+      <p>We see these patterns every week from operators we'd never recommend. If a quote you've received contains one of these, ask before signing.</p>
+        <ul class="bullet-list">
+          <li>Quotes without stated spoil disposal — surprise $1,500–$5,000 truck-load fees.</li>
+          <li>Cash earthworks without WHS / WorkCover — uninsurable if site damage.</li>
+          <li>Cheap-end operators without dial-before-you-dig service location — gas/water/electrical strikes.</li>
+          <li>Quotes without site survey — wrong volumes = wrong cost.</li>
+          <li>'Owner-supplied' fill from random source — usually contaminated, fails compaction test.</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How to get an accurate quote in 5 minutes</h2>
+      <p>Have the following ready when you call (03) 9003 0108 (or jot it on the quote form) and we can give you a real number in one call, not five.</p>
+        <ol class="numbered-list">
+          <li>Approximate volume (cubic m or LxWxD).</li>
+          <li>Photo of site + access.</li>
+          <li>Soil type if known.</li>
+          <li>Whether spoil leaves site or stays.</li>
+          <li>Service location plan (gas, water, electrical, sewer).</li>
+        </ol>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="section-inner">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Half-day or full-day?</strong></summary>
+          <div class="faq-a">Mini-excavator + operator min ~4 hours ($480). Most domestic jobs done in a day. Full-day $680–$980.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Spoil disposal — who pays?</strong></summary>
+          <div class="faq-a">Tip fees included in our quotes (transparent). $50/cubic m local tip; contaminated soil $180+/cube; reactive clay $80–$120.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Dial Before You Dig?</strong></summary>
+          <div class="faq-a">Yes — always lodged 5 working days before excavation. Free service. Required by law.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Insurance — what level?</strong></summary>
+          <div class="faq-a">$20M public liability + WorkCover. Verifiable certificate on request.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Can you do urgent jobs?</strong></summary>
+          <div class="faq-a">Yes — same-day mini-excavator for emergency drainage / water-main breaks. After-hours rate applies.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Soil import?</strong></summary>
+          <div class="faq-a">Yes — clean fill or road-base delivered + spread + compacted. Per-cubic-m rates.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q"><strong>Owner-supplied fill — can I save?</strong></summary>
+          <div class="faq-a">Only if compaction-tested + contamination-cleared. Otherwise you risk failing the slab compaction inspection.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-card-section">
+    <div class="cta-card cta-card-primary">
+      <div class="cta-card-body">
+        <h3>Ready for an exact quote on your Casey job?</h3>
+        <p>Free written quotes. No obligation. Same-day callbacks on most enquiries.</p>
+      </div>
+      <div class="cta-card-actions">
+        <a class="btn btn-primary btn-large" href="tel:+61390030108" aria-label="Call (03) 9003 0108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost btn-large" href="/quote/">Get a quote online</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+    .lead { font-size: 1.125rem; line-height: 1.7; max-width: 70rem; margin: 0 auto; color: var(--text, #1f2937); }
+    .section-tint { background: rgba(0, 0, 0, 0.025); }
+    .section-warn { background: rgba(180, 100, 0, 0.04); }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .pricing-table thead { background: #1f2937; color: #fff; }
+    .pricing-table th { padding: 0.85rem 1rem; text-align: left; font-weight: 600; font-size: 0.95rem; }
+    .pricing-table td { padding: 0.85rem 1rem; border-top: 1px solid #e5e7eb; vertical-align: top; }
+    .pricing-table tr:nth-child(even) td { background: rgba(0,0,0,0.015); }
+    .pricing-table .price-range { font-weight: 600; color: #047857; white-space: nowrap; }
+    .table-foot { font-size: 0.9rem; color: #6b7280; margin-top: 0.5rem; }
+    @media (max-width: 640px) {
+      .pricing-table thead { display: none; }
+      .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td { display: block; width: 100%; }
+      .pricing-table tr { border-bottom: 2px solid #e5e7eb; padding: 0.75rem 0; }
+      .pricing-table td { border: none; padding: 0.35rem 0.5rem; }
+      .pricing-table td:before { content: attr(data-label) ": "; font-weight: 600; color: #6b7280; display: inline-block; min-width: 5rem; }
+      .pricing-table td:first-child:before { display: none; }
+    }
+    .numbered-list, .bullet-list { max-width: 65rem; margin: 1rem 0; padding-left: 1.5rem; line-height: 1.7; }
+    .numbered-list li, .bullet-list li { margin: 0.65rem 0; }
+    .cta-card-section { padding: 2rem 1rem; }
+    .cta-card {
+      max-width: 56rem; margin: 0 auto;
+      background: #fff; border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 1.75rem; display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .cta-card-primary { background: #1f2937; color: #fff; border-color: #1f2937; }
+    .cta-card-primary h3 { color: #fff; }
+    .cta-card-body { flex: 1 1 24rem; }
+    .cta-card-body h3 { margin: 0 0 0.4rem 0; font-size: 1.35rem; line-height: 1.3; }
+    .cta-card-body p { margin: 0; }
+    .cta-card-actions { display: flex; gap: 0.65rem; flex-wrap: wrap; }
+    .btn-large { padding: 0.85rem 1.5rem; font-size: 1.05rem; }
+    .faq-list { max-width: 60rem; margin: 1rem auto; }
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 0.85rem 0; }
+    .faq-item[open] { background: rgba(0,0,0,0.02); }
+    .faq-q { cursor: pointer; padding: 0.4rem 0.5rem; font-size: 1.05rem; }
+    .faq-q:hover { color: #047857; }
+    .faq-a { padding: 0.65rem 0.5rem 0.85rem 0.5rem; line-height: 1.7; color: #4b5563; }
+
+  </style>
+</Layout>

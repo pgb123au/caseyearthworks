@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the soil like in Hampton Park?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hampton Park sits right in the reactive clay belt — Newer Volcanic clay, AS 2870 Class M to H1. 40-60mm seasonal swell is normal here. That's exactly why so many original 1980s-90s Hampton Park driveways look like a roller coaster. Every job we do in Hampton Park gets a hand-test for moisture content and we default to extra sub-base depth, lime stabilisation, or piered footings where the building permit allows." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do Hampton Park slabs and driveways crack so often?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three reasons: highly reactive clay with big seasonal moisture swings, original sub-base often too thin (75-100mm of cracker dust instead of the 150-200mm of crushed rock that the clay actually needs), and the local drainage is flat — water ponds against slab edges and soaks the sub-grade. Modern fix: strip back to firm sub-grade, lime-stabilise if shear strength is low, lay 180-200mm of compacted crushed rock, and install proper edge drainage. Done that way a Hampton Park driveway lasts 25+ years." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do drainage rectification in Hampton Park?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — drainage retrofit is a regular Hampton Park job. Typical: trench from rear yard to street kerb (40-60m run, 600-900mm deep), lay 100-150mm slotted ag-line wrapped in geotextile, install pits at junctions, backfill with drainage gravel, reinstate topsoil. Usually $2,800-$5,500 depending on length and how many existing services need to be located and avoided. Massively reduces slab and driveway movement long-term." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Hampton Park a busy area for site preparation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hampton Park is mostly established 1970s-90s housing, so it's lower-volume new-build than Cranbourne or Clyde. But there's steady demand for renovation work — extensions, granny flats, pool digs, driveway replacements, shed pads. We're typically on one or two Hampton Park jobs a week. The smaller suburb size means call-outs are quick and float fees never apply." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does an extension footing dig cost in Hampton Park?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A typical single-storey rear extension footing dig — strip-footings or pad-footings — runs $2,200-$4,200 depending on length, depth and access. Reactive clay sites usually need piered footings rather than strip; we coordinate with the piering contractor so our dig depth and width matches the spec. Slab cuts for additional concrete slab area: $80-$140 per linear metre of cut plus the surface excavation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work on small or sloping Hampton Park blocks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Hampton Park has plenty of original 600-800m2 blocks with awkward access. Our mini-ex fits 800mm side gates; the bobcat S70 fits 920mm. Sloping blocks (rare but they exist on the southern edge) we batter and benchwork properly with reinforcement to prevent collapse. We confirm access and slope at the site visit so the right machine is on site day one." }
+    }
+  ]
+};
+---
+<Layout
+  title="Excavation & Bobcat Hire Hampton Park | Clay-Belt Earthworks | (03) 9003 0108"
+  description="Excavation, bobcat hire and civil site-prep in Hampton Park — reactive clay specialists. Driveway sub-base, footing digs, pool excavation, drainage rectification, extension cuts. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/hampton-park/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Hampton Park &middot; Casey clay-belt suburb</span>
+      <h1>Excavation &amp; bobcat hire in <span class="accent">Hampton Park</span>.</h1>
+      <p class="hero-sub">
+        Hampton Park sits squarely in the reactive Newer Volcanic clay belt &mdash;
+        the kind of ground that&rsquo;s wrecked more 1980s driveways than any
+        other soil in Casey. We know it block by block. Sub-base specs that
+        actually last, drainage retrofits that fix the under-slab movement,
+        and engineer-coordinated piered footings for extensions.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Hampton Park</span>
+      <h2>The Hampton Park earthworks story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Class M to H1 reactive clay.</h3>
+        <p>
+          Hampton Park is the worst clay in Casey &mdash; AS 2870 Class M to H1,
+          40&ndash;60mm seasonal swell, the full Newer Volcanic profile. That&rsquo;s
+          why nearly every original 1980s&ndash;90s driveway in the suburb has
+          lifted, cracked or undulated. Modern best practice: 180&ndash;200mm
+          crushed-rock sub-base compacted to 95% SMDD, lime-stabilised sub-grade
+          where strength is low, edge drainage to take moisture off the slab.
+          We default to that spec on every Hampton Park driveway.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Drainage retrofit is half the fix.</h3>
+        <p>
+          The other half of Hampton Park&rsquo;s slab-cracking problem is flat
+          natural drainage &mdash; water ponds against the slab edges and soaks
+          the sub-grade through winter. We retrofit subsoil drainage trenches:
+          40&ndash;60m run from rear yard to the street kerb, 600&ndash;900mm
+          deep, 100&ndash;150mm slotted ag-line wrapped in geotextile, pits at
+          junctions, drainage gravel backfill, topsoil reinstated. $2.8K&ndash;$5.5K
+          for the full retrofit. Reduces under-slab movement dramatically.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Established-suburb job mix.</h3>
+        <p>
+          Hampton Park is mostly 1970s&ndash;90s housing &mdash; lower volume
+          new-build, steadier demand for renovation work. Typical week: an
+          extension footing dig, a granny-flat slab cut, a pool excavation on
+          an established block, and a driveway replacement on a 30-year-old
+          home where the original sub-base finally gave up.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Hampton Park jobs.</h3>
+        <ul>
+          <li>Driveway replacement 60m&sup2; with 200mm sub-base and edge drainage ($5.5K&ndash;$9K)</li>
+          <li>Subsoil drainage retrofit, 50m run rear-yard to kerb ($2.8K&ndash;$5.5K)</li>
+          <li>Single-storey extension footing dig on Class H1 clay ($2.5K&ndash;$4.5K)</li>
+          <li>Pool excavation 8m &times; 4m on established 700m&sup2; block ($4K&ndash;$6.5K)</li>
+          <li>Garage slab + driveway combined prep ($6K&ndash;$10K)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Hampton Park site visit.</h2>
+        <p>Clay-belt specialists. Honest about what your sub-base actually needs &mdash; not what the cheapest quote will say.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

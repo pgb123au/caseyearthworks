@@ -1,0 +1,245 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which trade should be on site first on a Casey new-build block?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The earthworks crew. Site cut and fill is sequence-zero on a new build — the pad sets the levels for everything that follows. We strip topsoil, cut the high side, batter the low side, build the pad in 100mm crushed-rock lifts and compaction-test to AS 3798. Once the pad is signed off by the geotechnical supervisor, the surveyor pegs the slab corners and the slab crew moves in. If we skip a step or get the level wrong, every trade downstream pays for it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the earthworks crew coordinate with the slab and frame builder on a Clyde or Officer estate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Builders on the Clyde, Officer and Cranbourne East release estates work to a fixed program — pad ready by week 1, slab by week 2, frame by week 4. We sit inside that program. The builder issues the engineering drawings, soil report and site plan; we confirm cut/fill volumes and the AS 2870 footing class. Pad handed over with compaction test results, dump dockets, before/after photos and the geotechnical sign-off. The slab crew arrives to a clean, certified pad on day one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need a council permit for earthworks in the City of Casey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Small residential cut and fill under 1m depth tied to an approved building permit usually doesn't need separate planning approval. Bulk earthworks over 100m3 of cut or fill, work in a Vegetation Protection Overlay, Significant Landscape Overlay or Heritage Overlay, or any earthworks within 30m of a waterway need City of Casey planning permission first. Commercial subdivisions are governed by AS 3798 and need a Level 1 geotechnical supervisor signing off each lift. We confirm the permit pathway during the free site visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you coordinate with retaining-wall builders, plumbers and pool builders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — three coordination points come up most: (1) retaining walls under cut-and-fill batters, where we hand a clean cut face to the wall builder and they engineer the wall; (2) plumbers laying the sewer connection in our trench, where we dig and reinstate and they lay and joint; (3) pool builders, where we dig to their spec sheet and they place the shell within 3–5 days. A 5-minute call between trades before any spade goes in prevents most coordination problems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can I check an earthworks contractor's insurance and Worksafe record?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Public liability and workers compensation certificates should be emailed before any deposit changes hands — we send ours as a matter of course. Worksafe Victoria's public register (worksafe.vic.gov.au) lists prosecutions and improvement notices. The Victorian Building Authority (vba.vic.gov.au) lists registered building practitioners. Earthworks contractors themselves aren't licensed at the trade level in Victoria, but the work has to comply with AS 3798, AS 2870 and Worksafe excavation regulations — verify before signing anything."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Local Casey Trades We Coordinate With | Casey Earthworks"
+  description="The Casey trades we work alongside on every job — slab and frame builders, retaining-wall contractors, plumbers, electricians, pool builders. Plus council, AS 3798 and Worksafe references for every homeowner and project manager."
+  canonical="https://caseyearthworks.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Trades we coordinate with on Casey earthworks jobs</span>
+      <h1>Local <span class="accent">Casey trades</span> we coordinate with.</h1>
+      <p class="hero-sub">
+        Earthworks is never the only trade on site. Below are the crews we work
+        alongside on every Casey job &mdash; from a single-block site cut for a
+        new home in Clyde, through to a 30-lot subdivision pad in Officer &mdash;
+        plus the council, AS 3798 and Worksafe references every owner-builder
+        and project manager should bookmark before any machine arrives.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free earthworks quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">In-network trades</span>
+      <h2>The four Casey trades we sit in sequence with.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Slab and frame builders &mdash; pad handover.</h3>
+        <p>
+          On every Officer, Clyde and Cranbourne East new build, the slab crew
+          arrives the day after we sign off the pad. They&rsquo;re working to a
+          fixed program and they need a certified-flat, compaction-tested pad
+          on day one. We hand over with documented test results (95% standard
+          maximum dry density on driveway sub-base, 98% on the slab pad),
+          dump dockets and before/after photos. No mystery, no remediation,
+          no &ldquo;come back and fix that corner&rdquo;.
+        </p>
+
+        <h3 style="margin-top:2rem;">Retaining-wall builders &mdash; cut and fill batters.</h3>
+        <p>
+          On sloping Berwick and Endeavour Hills blocks, a 1.5&ndash;2.5m cut
+          on the high side usually needs a retaining wall to hold the
+          neighbour&rsquo;s ground. We cut to the wall engineer&rsquo;s line,
+          batter the cut face to 1:1 stiff clay or 1:0.75 sandy, hand a clean
+          face to the wall builder, and come back to backfill behind the wall
+          with free-draining gravel and an ag-line behind it. We need the wall
+          engineering drawings before the cut goes in &mdash; we won&rsquo;t
+          cut to a face that doesn&rsquo;t match the wall design.
+        </p>
+
+        <h3 style="margin-top:2rem;">Plumbers and electricians &mdash; service trenches.</h3>
+        <p>
+          The single most common in-network job is digging the sewer connection
+          trench while the plumber stands by, laying and jointing as we go.
+          Same for electrical conduit from the meter to the pool equipment pad
+          or outbuilding. We dig the trench, lay the bedding sand, the licensed
+          trade lays and joints the pipe or conduit, we backfill and reinstate.
+          Council sewer tie-ins get inspected by the water authority before
+          backfill &mdash; we don&rsquo;t close the trench until that sign-off
+          is in.
+        </p>
+
+        <h3 style="margin-top:2rem;">Pool builders &mdash; dig spec to shell.</h3>
+        <p>
+          We work with the major Casey pool builders (Aloha, Compass, Narellan
+          and local installers) and dig to their published spec sheets &mdash;
+          dimensions, tolerances, base depth, plumbing over-dig. Dig is
+          finished 3&ndash;5 days before the shell arrives so the pool builder
+          can drop it straight in. On Cranbourne West shallow-groundwater
+          sites we keep the de-watering pump running until the shell weight
+          holds against the water table.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">Council, standards &amp; Worksafe</span>
+      <h2>The regulatory references for Casey earthworks.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          We point owner-builders, project managers and homeowners to these
+          resources constantly. AS 3798 and AS 2870 are the two standards that
+          decide whether a Casey pad stays flat for 50 years or starts moving
+          after one wet winter.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>City of Casey Council</strong> &mdash; building permits for
+            slabs and footings, planning permits where a vegetation protection
+            or significant landscape overlay applies, the bushfire-prone area
+            map and the stormwater point-of-discharge layer.
+            <a href="https://www.casey.vic.gov.au/" target="_blank" rel="external noopener">casey.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 3798 &mdash; Guidelines on earthworks for commercial
+            and residential developments</strong> &mdash; the Australian
+            Standard for bulk and structural fill, compaction testing, lift
+            thickness and supervision levels. Mandatory on commercial jobs;
+            best-practice on residential and how we run every job.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 2870 &mdash; Residential slabs and footings</strong>
+            &mdash; the standard that classifies sites by reactivity (A, S, M,
+            H1, H2, E, P) and dictates footing depths and pier specs. Every
+            Hampton Park, Endeavour Hills and eastern-Cranbourne block we work
+            on is Class M or H1.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Worksafe Victoria &mdash; Excavation Compliance Code</strong>
+            &mdash; the binding code for trench shoring, benching and battering,
+            edge protection and Dial Before You Dig procedure. Every trench
+            over 1.5m on our jobs gets a written SWMS before the bucket starts.
+            <a href="https://www.worksafe.vic.gov.au/" target="_blank" rel="external noopener">worksafe.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Dial Before You Dig (BYDA)</strong> &mdash; the free
+            service that delivers utility plans 5 working days before any
+            excavation. Mandatory for every job. Strikes on unmarked services
+            follow the Worksafe protocol &mdash; stop, photo, contact the
+            service owner, make safe.
+            <a href="https://www.byda.com.au/" target="_blank" rel="external noopener">byda.com.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>South East Water</strong> &mdash; the retail water
+            authority for the City of Casey. Sewer tie-in inspections,
+            stormwater legal-point-of-discharge applications, recycled-water
+            connections.
+            <a href="https://southeastwater.com.au/" target="_blank" rel="external noopener">southeastwater.com.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>How Casey trades sequence an earthworks job.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Earthworks first or surveyor first?</h3>
+        <p>
+          Surveyor sets the boundary pegs and rough levels. We come in next,
+          strip topsoil, cut and fill the pad. Once the pad is in, the
+          surveyor returns to peg the slab corners against the engineering
+          drawings. Skipping the second peg job leads to slabs being poured
+          off-line &mdash; expensive.
+        </p>
+        <h3 style="margin-top:1.5rem;">When does the geotechnical supervisor get involved?</h3>
+        <p>
+          Before the first lift on any commercial job &mdash; AS 3798 requires
+          Level 1 supervision (full-time on site) for commercial fill, and
+          they sign off every lift. On residential it&rsquo;s usually Level 3
+          (witness testing only) or none. We coordinate the inspection
+          schedule so the geotech is on site for compaction tests, not waiting
+          half a day.
+        </p>
+        <h3 style="margin-top:1.5rem;">Do we need a building permit before the cut goes in?</h3>
+        <p>
+          No &mdash; site preparation can usually start once the planning
+          permit is approved, before the building permit issues. But we
+          don&rsquo;t cut for slabs or footings without the engineering
+          drawings, because the cut depth depends on the footing class. On
+          Class M/H Casey clay sites that&rsquo;s typically 300mm topsoil
+          strip plus an engineered sub-base build-up.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ink);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; honest Casey earthworks pricing.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Site cut and fill, driveway sub-base, footings, pool digs, stormwater
+        and service trenching. AS 3798 compliant, Worksafe certified, $20M
+        public liability cover. Owner on site every job.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

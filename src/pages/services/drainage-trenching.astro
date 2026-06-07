@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kinds of drainage trenches do you dig?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All of them. Stormwater discharge trenches (rear yard to street kerb or legal point of discharge), subsoil ag-line drainage along driveways and slabs, sewer connection trenches from the house to the council sewer tie-in, downpipe-to-stormwater trenches, French drains around retaining walls, electrical conduit trenches from the meter to outbuildings or pool equipment pads, gas service trenches from the meter to BBQ kitchen or pool heater. Different depths and widths but the same standard of finish — neat, plumb-sided, properly backfilled." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does drainage trenching cost per metre in Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pricing varies with depth and soil. Standard 300-400mm wide stormwater trench at 600mm depth: $80-$110/lin.m. At 900mm depth: $110-$150/lin.m. Subsoil ag-line trench (200-300mm wide, 600mm deep): $70-$100/lin.m. Sewer connection trench (450mm wide, often 1.2-1.8m deep with shoring): $150-$280/lin.m. Includes the trench, lay/install pipework as required, backfill in 150mm lifts compacted, reinstate topsoil. Plumber or electrician supplies the pipe/conduit." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does drainage retrofit make such a difference on Casey clay?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reactive clay (Hampton Park, Endeavour Hills, eastern Hallam) swells when wet and shrinks when dry — that's what cracks slabs and driveways. If water sits against the slab edge through winter, that section of clay swells more than the rest and the slab moves. Subsoil drainage along the high side of the slab takes that water away before it reaches the clay. We typically install 100-150mm slotted ag-line wrapped in geotextile, surrounded by drainage gravel, discharging to a legal stormwater point. Adds 10-15 years to slab life." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you do a sewer connection to council main?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We dig the trench, lay the bedding sand, and reinstate. The actual pipe lay, jointing and connection to council main is done by your licensed plumber — that's a regulated trade. We coordinate with the plumber so the trench is open when they arrive and backfilled the same day. Council sewer tie-ins need to be inspected by the water authority (Casey Water Corp / SE Water) before backfill; we don't backfill until that inspection is signed off." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle trench safety for deeper trenches?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any trench over 1.5m deep in Victoria requires Worksafe-compliant shoring, benching or battering. We carry hydraulic trench shields (1.2m x 2.4m and 1.5m x 3m) for sites where shoring is the right call, and we batter the trench sides to 1:1 (sandy) or 1:0.75 (stiff clay) for open-cut sites. Written SWMS for every job over 1.5m. We never enter an unshored or un-battered trench over 1.5m deep — Worksafe penalties aside, it's how people get killed." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you avoid hitting existing services?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dial Before You Dig (DBYD) plans for every job 5 working days before the dig. We overlay the plans on the site, mark the services on the ground with paint and pegs. Within 600mm of a marked service we hand-dig with shovels rather than the excavator. If we hit a service that wasn't marked, work stops immediately, photo evidence is taken, the service owner is contacted, and the area is made safe — that's the Worksafe SWMS process for unmarked utility strikes." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about laser grade for sewer or stormwater falls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sewer and stormwater pipework needs a continuous fall — typically 1:60 to 1:100 for sewer, 1:100 to 1:200 for stormwater. We run a chase-grade laser on the trench so the bottom is straight-fall, no humps or dips. Vital for sewer runs where any dip becomes a future blockage. The trench bottom is laser-checked before bedding sand is laid and pipework goes in." }
+    }
+  ]
+};
+---
+<Layout
+  title="Drainage Trenching Berwick | Stormwater, Sewer & Service Trenches Casey | (03) 9003 0108"
+  description="Drainage trenching across the City of Casey — stormwater, subsoil, sewer, electrical and gas trenches. Laser-grade fall, Worksafe-compliant shoring, DBYD checked. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/services/drainage-trenching/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Stormwater &middot; sewer &middot; subsoil &middot; service trenches</span>
+      <h1>Drainage trenching in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Stormwater, subsoil ag-line, sewer connections, electrical conduit, gas
+        service trenches. Mini-ex with chase-grade laser for straight falls.
+        Worksafe shoring or battering for any trench over 1.5m. Dial Before
+        You Dig on every job. Neat, plumb-sided, properly backfilled.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Drainage trenches we dig every week.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Stormwater discharge</strong> &mdash; rear yard, downpipes and patio surface drains to street kerb or legal point of discharge. 300&ndash;450mm wide, 600&ndash;900mm deep.</li>
+          <li><strong>Subsoil ag-line drainage</strong> &mdash; 100&ndash;150mm slotted pipe wrapped in geotextile, surrounded by drainage gravel, along the high side of slabs and driveways. The single most cost-effective slab-protection measure on Casey reactive clay.</li>
+          <li><strong>Sewer connection</strong> &mdash; trench from house to council sewer tie-in. 450mm wide, typically 1.2&ndash;1.8m deep with shoring. We dig and reinstate; licensed plumber lays and joints the pipe.</li>
+          <li><strong>Downpipe-to-stormwater</strong> &mdash; 200&ndash;300mm wide, 300&ndash;450mm deep, from downpipe boots to the stormwater main line.</li>
+          <li><strong>French drains</strong> &mdash; behind retaining walls or in low yard zones. Gravel-filled trench with optional perforated outlet pipe.</li>
+          <li><strong>Electrical conduit trench</strong> &mdash; from the main meter to pool equipment pad, outbuilding, EV charger. 450mm depth standard, 600mm under driveways, mechanical protection above conduit.</li>
+          <li><strong>Gas service trench</strong> &mdash; from meter to BBQ kitchen, pool heater, outdoor heater. 300mm deep, sand bedding, plastic warning tape over the pipe.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Laser-grade fall.</h3>
+        <p>
+          Stormwater needs a continuous fall (1:100 to 1:200), sewer steeper
+          (1:60 to 1:100). We run a chase-grade rotating laser to control trench
+          bottom levels &mdash; straight fall, no humps or dips, no future
+          blockages. Laser checked before bedding sand goes in.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Trench safety &mdash; non-negotiable.</h3>
+        <p>
+          Worksafe Victoria mandates shoring, benching or battering on any
+          trench over 1.5m deep. We carry 1.2m &times; 2.4m and 1.5m &times; 3m
+          hydraulic trench shields. Open-cut sites get engineered batters
+          (1:1 sandy, 1:0.75 stiff clay). Written SWMS for every trench over
+          1.5m. No one enters an unshored or un-battered trench at that depth
+          on our jobs.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Dial Before You Dig.</h3>
+        <p>
+          DBYD plans 5 working days before any dig. Services marked on the
+          ground with paint and pegs. Within 600mm of marked services we
+          hand-dig with shovels. Unmarked-service strikes follow the SWMS
+          protocol &mdash; stop work, photo, service owner contacted, area
+          made safe.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li><strong>Stormwater trench, 300&ndash;400mm wide, 600mm deep:</strong> $80&ndash;$110/lin.m</li>
+          <li><strong>Stormwater trench at 900mm depth:</strong> $110&ndash;$150/lin.m</li>
+          <li><strong>Subsoil ag-line trench, 200&ndash;300mm wide, 600mm deep:</strong> $70&ndash;$100/lin.m</li>
+          <li><strong>Sewer trench, 450mm wide, 1.2&ndash;1.8m deep with shoring:</strong> $150&ndash;$280/lin.m</li>
+          <li><strong>Electrical conduit trench, 450mm depth:</strong> $50&ndash;$80/lin.m</li>
+          <li><strong>Subsoil drainage retrofit, full 40&ndash;60m rear-to-kerb run:</strong> $2.8K&ndash;$5.5K all-in</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free drainage trenching quote.</h2>
+        <p>Access check, soil hand-test, DBYD planning. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

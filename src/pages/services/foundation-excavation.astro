@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kinds of footings do you excavate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "All of them. Strip footings under brick/blockwork extensions (typically 300-600mm wide, 600-1200mm deep), pad footings under columns (square pits 600-1500mm a side), piered footings on reactive clay (drill 300-600mm diameter holes, 1.5-3m deep), retaining-wall footings (linear trenches matching the wall engineer's spec), slab edge cuts and stiffener beam cuts under raft slabs. We work to the engineer's drawings and confirm depth at the dig with a tape measure before any concrete arrives." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a foundation excavation cost in Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Daily rate is the cleanest way to quote most footing work because depth and ground conditions vary. 5t excavator wet hire: $1,100-$1,500/day; mini-ex on tight blocks: $900-$1,200/day. Typical single-storey rear extension footing dig: $2,200-$4,200. Two-storey extension: $3,500-$6,500. Pad footings for a veranda or carport: $1,200-$2,500. Retaining-wall footing trench, 15m: $1,500-$3,500." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are piered footings needed on Casey clay sites?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Reactive clay (AS 2870 Class M to H) swells and shrinks seasonally — 30-50mm of vertical movement on Hampton Park or Endeavour Hills sites is normal. A standard strip footing sitting in that active zone moves with it, and any brickwork or slab tied to that footing cracks. Piers drilled to a depth below the active zone (typically 1.5-3m on Casey clay) anchor the footing to stable ground. The engineer designs the spec — we drill, clean, and concrete to that spec." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you set out and check footing levels yourself?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We set out from the engineer's drawings or the surveyor's pegs, dig to the spec depth, check the depth and width before any concrete is poured, square the corners, scrape the base clean of loose material so the concrete bonds to firm ground. On engineered jobs the building surveyor inspects the open footings before pour — we coordinate that inspection and won't let anyone pour over an unchecked footing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle Worksafe trench safety for deeper footings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Any excavation deeper than 1.5m in Victoria requires Worksafe-compliant shoring, benching or battering. We carry trench shields for sites where shoring is the right answer and we run engineered batter slopes (1:1 on sandy soil, 1:0.75 on stiff clay) on open-cut sites. Every trench job over 1.5m gets a written SWMS (safe work method statement) before work starts." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do footings in tight side-access positions?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Mini-excavator (Kubota KX008) fits through 800mm side gates. For 750mm and under we use a Dingo or hand-dig with spoil shuttled by wheel barrow. Slower and a bit more expensive per metre, but means you don't have to remove a fence section, drop a side gate or work around a neighbour's bricks. We confirm access at the site visit so the right machine arrives day one." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if you hit rock or unexpected services?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Before any dig we call Dial Before You Dig (DBYD) and overlay the plans on the site. We hand-dig around marked services within 600mm clearance. If we hit a service that wasn't marked, work stops, photo evidence, service owner contacted. For unexpected rock we usually have a rock-breaker attachment in the ute kit — small outcrops add half a day, major rock means a re-quote because it changes the program substantially." }
+    }
+  ]
+};
+---
+<Layout
+  title="Foundation Excavation Berwick | Footing Digs Casey | (03) 9003 0108"
+  description="Foundation excavation and footing digs across the City of Casey — strip, pad, piered and retaining footings. Engineer-spec depth on reactive clay. Worksafe compliant. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/services/foundation-excavation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Strip, pad and piered footings &middot; engineer-spec depth</span>
+      <h1>Foundation excavation in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Footings for new homes, extensions, granny flats, retaining walls,
+        sheds, verandas. Strip, pad, piered, slab-edge cuts. Engineer-spec depth
+        and width. Clean edges. Set out checked. Building-surveyor inspection
+        coordinated before pour. Worksafe SWMS on every job over 1.5m.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Footing types we excavate.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Strip footings</strong> &mdash; continuous trench under load-bearing walls. Typical 300&ndash;600mm wide, 600&ndash;1200mm deep. Standard for brick-veneer extensions on stable ground.</li>
+          <li><strong>Pad footings</strong> &mdash; square or rectangular pits under columns, posts or point loads. 600&ndash;1500mm a side, 600&ndash;1500mm deep. Common for verandas, carports, sheds and steel-post outbuildings.</li>
+          <li><strong>Piered footings</strong> &mdash; drilled cylindrical holes anchored below the reactive-clay active zone. 300&ndash;600mm diameter, 1.5&ndash;3m deep on Casey clay. Mandatory on AS 2870 Class M/H sites for any structural footing.</li>
+          <li><strong>Slab edge / stiffener beam cuts</strong> &mdash; the perimeter and internal stiffener beams under a raft slab. Trenched to engineer&rsquo;s spec, usually 300&ndash;500mm deep with crisp 90&deg; edges.</li>
+          <li><strong>Retaining-wall footings</strong> &mdash; linear trench matching the retaining engineer&rsquo;s drawing. Width and depth from the wall design.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why piered footings matter on Casey clay.</h3>
+        <p>
+          Endeavour Hills, Hampton Park, eastern Hallam and Narre Warren North
+          all sit on AS 2870 Class M to H1 reactive clay. That clay swells and
+          shrinks 30&ndash;50mm seasonally as moisture changes. A standard strip
+          footing within that active zone (top 1&ndash;2m) moves with the clay,
+          and any brickwork or slab tied to it cracks. Piers drilled below the
+          active zone (typically 1.5&ndash;3m) anchor the footing to stable ground.
+          The engineer designs the pier spec; we drill, clean and concrete to
+          spec.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Set-out and depth verification.</h3>
+        <p>
+          We set out from the engineer&rsquo;s drawings or the surveyor&rsquo;s
+          pegs. Every footing trench gets depth-checked with a tape before any
+          concrete arrives &mdash; the inspector won&rsquo;t pass a shallow
+          footing and your structural engineer won&rsquo;t sign off either.
+          Corners squared, base scraped clean of loose spoil, sides plumb where
+          the engineer requires it.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Worksafe and Dial Before You Dig.</h3>
+        <p>
+          Every job starts with a DBYD plan overlay. Marked services within
+          600mm get hand-dug. Trenches over 1.5m deep get shoring, benching
+          or engineered battering per the SWMS &mdash; not negotiable. Our
+          $20M public liability and workers comp certificates are emailed
+          before deposit.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li><strong>Wet-hire daily rate</strong> 5t excavator: $1,100&ndash;$1,500/day, mini-ex on tight blocks: $900&ndash;$1,200/day</li>
+          <li><strong>Single-storey rear extension footings:</strong> $2,200&ndash;$4,200</li>
+          <li><strong>Two-storey extension footings:</strong> $3,500&ndash;$6,500</li>
+          <li><strong>Pad footings for veranda or carport:</strong> $1,200&ndash;$2,500</li>
+          <li><strong>Retaining-wall footing trench, 15m run:</strong> $1,500&ndash;$3,500</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free footing dig quote.</h2>
+        <p>Engineer drawings reviewed, access checked, set-out confirmed. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does driveway preparation include?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Driveway preparation is everything up to (but not including) the concrete pour or asphalt lay: strip topsoil and any old driveway slab/rubble, excavate the sub-grade to the depth the concreter wants, lime-stabilise the sub-grade where needed on reactive clay, supply and lay 150-200mm of compacted crushed-rock sub-base in 100mm lifts, install edge drainage where the engineer or site conditions require it, finished-level set out for the concreter. We don't pour the slab — we hand it over ready for the concreter or asphalt crew to take it from there." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does driveway prep cost per square metre in Casey?",
+      "acceptedAnswer": { "@type": "Answer", "text": "$80-$140 per square metre installed for standard residential driveway prep — that includes strip, sub-grade prep, supply and lay 150mm crushed rock, two lifts compacted to 95% SMDD, set-out. Reactive-clay sites (Endeavour Hills, Hampton Park) at 180-200mm sub-base depth run $110-$170/m2. Driveway replacement (where we have to strip an old slab and cart away rubble) adds $30-$50/m2 for the demolition." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does driveway sub-base depth matter so much?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sub-base depth is the difference between a 5-year driveway and a 25-year driveway. The old standard of 75-100mm of cracker dust under residential driveways doesn't handle the seasonal soil movement on reactive clay — slabs lift, crack and undulate within 5 years. Modern best practice on Class M to H1 clay is 180-200mm of compacted crushed rock in two lifts. On Class P sandy loam, 150mm is fine. The extra material adds $400-$800 to a typical 60m2 driveway and saves a $15,000 replacement in 2030." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do driveway crossovers as part of the job?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we do the crossover sub-base (the section from the kerb to the property boundary) as part of the same mobilisation. City of Casey require crossovers be built to their standard detail; we work to that detail. Council inspect the crossover after the concrete pour — we coordinate the inspection timing with the concreter so you don't have a driveway slab sitting un-poured waiting for the inspector. Crossover prep typically adds $1,200-$2,200 to a driveway job." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you replace an existing cracked driveway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — driveway replacement is one of our most common Casey jobs, particularly in Hampton Park, Endeavour Hills, Narre Warren and older Cranbourne where 1980s-90s sub-bases have finally given up. Process: break up the old slab with the excavator hammer attachment, load and cart the rubble to a registered receiving site (dump docket on file), excavate down to firm sub-grade, lay new 180-200mm crushed-rock sub-base properly, hand over to the concreter. $80-$150 per m2 depending on the slab thickness and any rebar to be cut." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does driveway prep take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard 60m2 new-build driveway prep on a flat sandy block: 1 day. A 60m2 replacement on reactive clay with old slab demolition: 1.5-2 days. A 150m2 commercial driveway: 2-3 days. A long rural driveway (150-300m): 4-7 days depending on terrain and culvert requirements. We provide a fixed program at quoting so the concreter can lock in their pour date." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you do all-weather rural driveways for acreage blocks?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — rural and acreage driveways (Narre Warren North, the Pakenham fringe, outer Cranbourne East) are regular work. Typical spec: 4m wide running surface, battered shoulders, 200mm crushed-rock sub-base on prepared sub-grade, 50-100mm crushed-rock running course on top, pipe culverts under natural drainage lines, turn-circles or passing bays as required. $50-$90 per linear metre for a basic rural drive; $90-$150 per linear metre for a fully engineered all-weather drive with culverts and crowned cross-fall." }
+    }
+  ]
+};
+---
+<Layout
+  title="Driveway Preparation Berwick | Sub-Base Prep Casey | (03) 9003 0108"
+  description="Driveway preparation and sub-base for Berwick, Cranbourne, Narre Warren, Hampton Park, Endeavour Hills — strip, sub-grade prep, 150-200mm crushed-rock sub-base, edge drainage. Free on-site quote."
+  canonical="https://caseyearthworks.com.au/services/driveway-preparation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Sub-base prep that outlasts the clay</span>
+      <h1>Driveway preparation in <span class="accent">Berwick &amp; Casey</span>.</h1>
+      <p class="hero-sub">
+        Strip, sub-grade prep, 150&ndash;200mm of crushed-rock sub-base in
+        100mm lifts compacted to 95% standard maximum dry density, edge drainage
+        where the clay demands it. The right depth for the soil type. Set out
+        ready for the concreter or asphalt crew.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free site visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How driveway prep should actually be done.</h2>
+      <div style="max-width: 65rem;">
+        <h3>The six stages.</h3>
+        <ol>
+          <li><strong>Site set-out:</strong> peg the driveway edges, kerb tie-in, crossover line, the slab-edge interface with the garage / house.</li>
+          <li><strong>Strip / demolition:</strong> remove topsoil 100&ndash;200mm or break up any old slab/cracker-dust sub-base. Cart spoil away (dump docket on file).</li>
+          <li><strong>Sub-grade prep:</strong> level the exposed sub-grade, hand-test or densometer for strength. Lime-stabilise on reactive Class M/H clay where shear strength is low.</li>
+          <li><strong>Sub-base lay:</strong> lay 150&ndash;200mm of crushed rock in 100mm lifts. Watercart adjusts moisture to optimum. Smooth-drum roller compacts each lift to 95% SMDD before the next.</li>
+          <li><strong>Edge drainage:</strong> install 100mm slotted ag-line along the high side where the engineer or site conditions require it (almost always on reactive clay). Discharge to legal stormwater.</li>
+          <li><strong>Finish trim:</strong> precision trim to final levels, edges crisp. Hand-over to the concreter.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Spec by soil type.</h3>
+        <ul>
+          <li><strong>Class P / M silty-loam</strong> (most of Cranbourne, Officer, Clyde, north Berwick): 150mm crushed-rock sub-base. ~$80&ndash;$110/m&sup2;.</li>
+          <li><strong>Class M / M-D moderately reactive clay</strong> (central Berwick, Narre Warren South, Cranbourne West): 150&ndash;180mm sub-base with edge drainage. ~$100&ndash;$140/m&sup2;.</li>
+          <li><strong>Class M / H1 highly reactive clay</strong> (Endeavour Hills, Hampton Park, eastern Hallam, Narre Warren North): 180&ndash;200mm sub-base + lime-stabilised sub-grade + edge drainage. ~$110&ndash;$170/m&sup2;.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why cheap quotes fail in 5 years.</h3>
+        <p>
+          The cheapest driveway prep quotes you&rsquo;ll see in Casey skip
+          one or more of: proper sub-base depth, compaction in 100mm lifts
+          (single 200mm lift never compacts properly), edge drainage on reactive
+          clay, lime stabilisation on weak sub-grade. Each of those saves
+          $400&ndash;$1,200 on day one. Together they&rsquo;re why so many
+          1990s and 2010s Casey driveways have lifted, cracked or undulated.
+          We&rsquo;d rather miss your job than build it the wrong way.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Driveway crossovers.</h3>
+        <p>
+          City of Casey requires crossovers be built to their standard detail.
+          We do the crossover sub-base as part of the driveway job &mdash; one
+          mobilisation, one crew. Council inspects after the concrete pour;
+          we coordinate inspection timing with the concreter so the slab
+          doesn&rsquo;t sit un-poured. Crossover prep typically adds
+          $1,200&ndash;$2,200 to a residential driveway job.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Rural and acreage driveways.</h3>
+        <p>
+          Narre Warren North, outer Cranbourne East, the Pakenham fringe and
+          rural Officer all need different driveway thinking &mdash; battered
+          shoulders, crowned cross-fall, pipe culverts under natural drainage
+          lines, passing bays. $50&ndash;$150 per linear metre depending on
+          finish (basic crushed-rock running course through to fully engineered
+          all-weather drive).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/berwick/">Berwick</a>
+        <a class="area-pill" href="/cranbourne/">Cranbourne</a>
+        <a class="area-pill" href="/narre-warren/">Narre Warren</a>
+        <a class="area-pill" href="/hampton-park/">Hampton Park</a>
+        <a class="area-pill" href="/endeavour-hills/">Endeavour Hills</a>
+        <a class="area-pill" href="/city-of-casey/">All City of Casey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free driveway prep quote.</h2>
+        <p>Soil hand-test, slope check, fixed price within 48 hours. Done right.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
