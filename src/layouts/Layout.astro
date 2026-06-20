@@ -144,16 +144,7 @@ const breadcrumbSchema = {
 
   <meta name="google-site-verification" content="NcHyUdUlpAh7C4rMei2M6WYJ3sfJjEwK_YP7WgsWtmQ">
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script is:inline>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', {
-      'send_page_view': true,
-      'anonymize_ip': true
-    });
-  </script>
+  <script defer is:inline src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "19e26b0aeb834150b5be772373498ed7"}'></script>
 
   <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
